@@ -14,33 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hero.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/hero/hero.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.component.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/common/navbar/navbar.component.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="304">
+              <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
               <folding>
                 <element signature="e#32#62#0" expanded="true" />
               </folding>
@@ -48,23 +26,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="components.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/components.js">
+      <file leaf-file-name="Home.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/Home/Home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="23">
+              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/home/home.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="368">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/Home/Home.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/Home/Home.component.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -83,6 +99,9 @@
     <findStrings>
       <find>route</find>
       <find>index</find>
+      <find>html</find>
+      <find>uglify</find>
+      <find>2.4.24</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,10 +111,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app/index.js" />
         <option value="$PROJECT_DIR$/app/components/hero/hero.js" />
+        <option value="$PROJECT_DIR$/app/components/Home.component.js" />
+        <option value="$PROJECT_DIR$/app/index.scss" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/index.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/app/components/index.js" />
+        <option value="$PROJECT_DIR$/app/components/Home/Home.component.html" />
+        <option value="$PROJECT_DIR$/app/components/Home/index.js" />
+        <option value="$PROJECT_DIR$/app/components/Home/Home.scss" />
+        <option value="$PROJECT_DIR$/app/components/Home/Home.component.js" />
+        <option value="$PROJECT_DIR$/app/config.js" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
       </list>
     </option>
   </component>
@@ -162,12 +191,6 @@
               <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -175,14 +198,7 @@
               <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="hero" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,6 +218,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components/Home" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -230,18 +247,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527972188000</updated>
-      <workItem from="1527972191325" duration="3391000" />
+      <workItem from="1527972191325" duration="6329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3391000" />
+    <option name="totallyTimeSpent" value="6329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298351" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -259,6 +277,26 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298351" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -303,14 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -327,31 +357,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -363,9 +369,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -381,9 +385,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -391,9 +393,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -401,9 +401,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -412,16 +410,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#32#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -435,11 +423,756 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/common/navbar/navbar.component.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.config.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="45" column="75" lean-forward="false" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@uirouter/angularjs/lib/injectables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3176">
+          <caret line="132" column="23" lean-forward="true" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Home/Home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+          <folding>
+            <element signature="e#32#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Home/Home.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Home/Home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="4855" column="6" lean-forward="true" selection-start-line="4855" selection-start-column="6" selection-end-line="4855" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!block;n#@uirouter/angularjs#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#@uirouter/angularjs#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#@uirouter/core#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#JSV#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#abbrev#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#accepts#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#accepts#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#acorn#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#after#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ajv#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#ajv#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#align-text#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#align-text#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#align-text#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#kind-of#0;n#!!block;n#dependencies#0;n#!!block;n#align-text#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#kind-of#0;n#!!block;n#dependencies#0;n#!!block;n#align-text#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#alphanum-sort#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#alter#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#alter#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#amdefine#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#angular#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#angular-mocks#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ansi-cyan#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#ansi-cyan#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ansi-gray#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#ansi-gray#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ansi-red#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#ansi-red#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ansi-regex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ansi-styles#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ansi-wrap#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#arr-diff#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#arr-diff#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-unique#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#braces#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#braces#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#expand-brackets#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#expand-brackets#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-extglob#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-glob#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-glob#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#kind-of#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#kind-of#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#micromatch#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#micromatch#0;n#!!block;n#dependencies#0;n#!!block;n#anymatch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#aproba#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#archy#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#are-we-there-yet#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#are-we-there-yet#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#are-we-there-yet#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#isarray#0;n#!!block;n#dependencies#0;n#!!block;n#are-we-there-yet#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#readable-stream#0;n#!!block;n#dependencies#0;n#!!block;n#are-we-there-yet#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#readable-stream#0;n#!!block;n#dependencies#0;n#!!block;n#are-we-there-yet#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#string_decoder#0;n#!!block;n#dependencies#0;n#!!block;n#are-we-there-yet#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#string_decoder#0;n#!!block;n#dependencies#0;n#!!block;n#are-we-there-yet#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#argparse#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#argparse#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#arr-diff#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#arr-flatten#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#arr-union#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-differ#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-each#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-find-index#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-flatten#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-slice#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-uniq#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-unique#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#arraybuffer.slice#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#asn1#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#assert#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#assert#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#assert-plus#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#assertion-error#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#assign-symbols#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#async#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#async-each#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#async-foreach#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#asynckit#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#atob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#autoprefixer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#autoprefixer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#aws-sign2#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#aws4#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-code-frame#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-code-frame#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-core#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-core#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#babel-core#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lodash#0;n#!!block;n#dependencies#0;n#!!block;n#babel-core#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-generator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-generator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#babel-generator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lodash#0;n#!!block;n#dependencies#0;n#!!block;n#babel-generator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-bindify-decorators#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-bindify-decorators#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-builder-binary-assignment-operator-visitor#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-builder-binary-assignment-operator-visitor#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-call-delegate#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-call-delegate#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-define-map#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-define-map#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#babel-helper-define-map#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lodash#0;n#!!block;n#dependencies#0;n#!!block;n#babel-helper-define-map#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-explode-assignable-expression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-explode-assignable-expression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-explode-class#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-explode-class#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-function-name#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-function-name#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-get-function-arity#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-get-function-arity#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-hoist-variables#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-hoist-variables#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-optimise-call-expression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-optimise-call-expression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-regex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-regex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#babel-helper-regex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lodash#0;n#!!block;n#dependencies#0;n#!!block;n#babel-helper-regex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-remap-async-to-generator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-remap-async-to-generator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helper-replace-supers#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helper-replace-supers#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-helpers#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-helpers#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-loader#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-loader#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-messages#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-messages#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-check-es2015-constants#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-check-es2015-constants#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-async-functions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-async-generators#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-class-constructor-call#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-class-properties#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-decorators#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-do-expressions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-dynamic-import#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-exponentiation-operator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-export-extensions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-function-bind#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-object-rest-spread#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-syntax-trailing-function-commas#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-async-generator-functions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-async-generator-functions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-async-to-generator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-async-to-generator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-class-constructor-call#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-class-constructor-call#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-class-properties#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-class-properties#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-decorators#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-decorators#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-do-expressions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-do-expressions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-arrow-functions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-arrow-functions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-block-scoped-functions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-block-scoped-functions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-block-scoping#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-block-scoping#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#babel-plugin-transform-es2015-block-scoping#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lodash#0;n#!!block;n#dependencies#0;n#!!block;n#babel-plugin-transform-es2015-block-scoping#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-classes#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-classes#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-computed-properties#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-computed-properties#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-destructuring#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-destructuring#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-duplicate-keys#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-duplicate-keys#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-for-of#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-for-of#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-function-name#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-function-name#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-literals#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-literals#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-modules-amd#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-modules-amd#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-modules-commonjs#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-modules-commonjs#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-modules-systemjs#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-modules-systemjs#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-modules-umd#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-modules-umd#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-object-super#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-object-super#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-parameters#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-parameters#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-shorthand-properties#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-shorthand-properties#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-spread#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-spread#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-sticky-regex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-sticky-regex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-template-literals#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-template-literals#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-typeof-symbol#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-typeof-symbol#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-es2015-unicode-regex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-es2015-unicode-regex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-exponentiation-operator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-exponentiation-operator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-export-extensions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-export-extensions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-function-bind#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-function-bind#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-object-rest-spread#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-object-rest-spread#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-regenerator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-regenerator#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-plugin-transform-strict-mode#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-plugin-transform-strict-mode#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-preset-es2015#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-preset-es2015#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-preset-stage-0#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-preset-stage-0#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-preset-stage-1#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-preset-stage-1#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-preset-stage-2#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-preset-stage-2#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-preset-stage-3#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-preset-stage-3#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-register#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-register#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#babel-register#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lodash#0;n#!!block;n#dependencies#0;n#!!block;n#babel-register#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-runtime#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-runtime#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-template#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-template#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#babel-template#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lodash#0;n#!!block;n#dependencies#0;n#!!block;n#babel-template#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-traverse#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-traverse#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#babel-traverse#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lodash#0;n#!!block;n#dependencies#0;n#!!block;n#babel-traverse#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babel-types#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#babel-types#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#babel-types#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lodash#0;n#!!block;n#dependencies#0;n#!!block;n#babel-types#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#babylon#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#backo2#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#balanced-match#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-accessor-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-accessor-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-data-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-data-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#base64-arraybuffer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#base64-js#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#base64id#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#batch#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#bcrypt-pbkdf#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#bcrypt-pbkdf#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#beeper#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#better-assert#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#better-assert#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#big.js#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#binary-extensions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#binaryextensions#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#blob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#block-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#block-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#bluebird#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#body-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#body-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#bourbon#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#brace-expansion#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#brace-expansion#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!block;n#braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!block;n#braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#browserify-aes#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#browserify-aes#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#browserify-zlib#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#browserify-zlib#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#browserslist#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#browserslist#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#buffer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#buffer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#buffer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#isarray#0;n#!!block;n#dependencies#0;n#!!block;n#buffer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#builtin-modules#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#builtin-status-codes#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#bytes#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cache-base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#cache-base#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#callsite#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#camel-case#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#camel-case#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#camelcase#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#camelcase-keys#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#camelcase-keys#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#camelcase-keys#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#camelcase#0;n#!!block;n#dependencies#0;n#!!block;n#camelcase-keys#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#caniuse-api#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#caniuse-api#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#caniuse-db#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#caseless#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#center-align#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#center-align#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#chai#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#chai#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#chalk#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#chalk#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#change-case#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#change-case#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#chokidar#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#chokidar#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#chokidar#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-extglob#0;n#!!block;n#dependencies#0;n#!!block;n#chokidar#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-glob#0;n#!!block;n#dependencies#0;n#!!block;n#chokidar#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-glob#0;n#!!block;n#dependencies#0;n#!!block;n#chokidar#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#clap#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#clap#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#class-utils#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#class-utils#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#class-utils#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!block;n#class-utils#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!block;n#class-utils#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#clean-css#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#clean-css#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#clean-css#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#source-map#0;n#!!block;n#dependencies#0;n#!!block;n#clean-css#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#source-map#0;n#!!block;n#dependencies#0;n#!!block;n#clean-css#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cli#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#cli#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cli-table#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#cli-table#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#cli-table#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#colors#0;n#!!block;n#dependencies#0;n#!!block;n#cli-table#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cliui#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#cliui#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#clone#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#clone-buffer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#clone-stats#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cloneable-readable#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#cloneable-readable#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#cloneable-readable#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#isarray#0;n#!!block;n#dependencies#0;n#!!block;n#cloneable-readable#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#readable-stream#0;n#!!block;n#dependencies#0;n#!!block;n#cloneable-readable#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#readable-stream#0;n#!!block;n#dependencies#0;n#!!block;n#cloneable-readable#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#string_decoder#0;n#!!block;n#dependencies#0;n#!!block;n#cloneable-readable#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#string_decoder#0;n#!!block;n#dependencies#0;n#!!block;n#cloneable-readable#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#co#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#coa#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#coa#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#code-point-at#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#collection-visit#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#collection-visit#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#color#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#color#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#color-convert#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#color-convert#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#color-name#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#color-string#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#color-string#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#color-support#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#colormin#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#colormin#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#colors#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#combined-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#combined-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#commander#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#comment-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#comment-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#comment-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#isarray#0;n#!!block;n#dependencies#0;n#!!block;n#comment-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#readable-stream#0;n#!!block;n#dependencies#0;n#!!block;n#comment-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#readable-stream#0;n#!!block;n#dependencies#0;n#!!block;n#comment-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#string_decoder#0;n#!!block;n#dependencies#0;n#!!block;n#comment-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#string_decoder#0;n#!!block;n#dependencies#0;n#!!block;n#comment-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#commondir#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#component-bind#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#component-emitter#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#component-inherit#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#compressible#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#compressible#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#compression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#compression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#compression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#accepts#0;n#!!block;n#dependencies#0;n#!!block;n#compression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#accepts#0;n#!!block;n#dependencies#0;n#!!block;n#compression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#safe-buffer#0;n#!!block;n#dependencies#0;n#!!block;n#compression#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#concat-map#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#concat-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#concat-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#concat-with-sourcemaps#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#concat-with-sourcemaps#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#concat-with-sourcemaps#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#source-map#0;n#!!block;n#dependencies#0;n#!!block;n#concat-with-sourcemaps#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#connect#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#connect#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#connect-history-api-fallback#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#console-browserify#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#console-browserify#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#console-control-strings#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#constant-case#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#constant-case#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#constants-browserify#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#content-disposition#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#content-type#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#convert-source-map#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cookie#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cookie-signature#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#copy-descriptor#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#core-js#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#core-util-is#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cross-spawn#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#cross-spawn#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#cross-spawn#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#lru-cache#0;n#!!block;n#dependencies#0;n#!!block;n#cross-spawn#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#lru-cache#0;n#!!block;n#dependencies#0;n#!!block;n#cross-spawn#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#crypto-browserify#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#crypto-browserify#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#css-color-names#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#css-loader#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#css-loader#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#css-selector-tokenizer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#css-selector-tokenizer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cssesc#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cssnano#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#cssnano#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#csso#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#csso#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cst#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#cst#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#currently-unhandled#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#currently-unhandled#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#custom-event#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#cycle#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dashdash#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#dashdash#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#date-now#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dateformat#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#debug#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#debug#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#decamelize#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#decode-uri-component#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#deep-eql#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#deep-eql#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#deep-eql#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#type-detect#0;n#!!block;n#dependencies#0;n#!!block;n#deep-eql#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#deep-equal#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#defaults#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#defaults#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-accessor-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-accessor-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-data-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-data-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#defined#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#delayed-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#delegates#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#depd#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#deprecated#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#destroy#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#detect-file#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#detect-indent#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#detect-indent#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#di#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#diff#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dom-serialize#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#dom-serialize#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dom-serializer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#dom-serializer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#dom-serializer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#domelementtype#0;n#!!block;n#dependencies#0;n#!!block;n#dom-serializer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#entities#0;n#!!block;n#dependencies#0;n#!!block;n#dom-serializer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#domain-browser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#domelementtype#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#domhandler#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#domhandler#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#domutils#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#domutils#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dot-case#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#dot-case#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#duplexer#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#duplexer2#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#duplexer2#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ecc-jsbn#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#ecc-jsbn#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ee-first#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#electron-to-chromium#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#emojis-list#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#encodeurl#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#end-of-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#end-of-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#end-of-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#once#0;n#!!block;n#dependencies#0;n#!!block;n#end-of-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#once#0;n#!!block;n#dependencies#0;n#!!block;n#end-of-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#engine.io#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#engine.io#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#engine.io#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#debug#0;n#!!block;n#dependencies#0;n#!!block;n#engine.io#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#debug#0;n#!!block;n#dependencies#0;n#!!block;n#engine.io#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ms#0;n#!!block;n#dependencies#0;n#!!block;n#engine.io#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#engine.io-client#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#engine.io-client#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#engine.io-client#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#debug#0;n#!!block;n#dependencies#0;n#!!block;n#engine.io-client#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#debug#0;n#!!block;n#dependencies#0;n#!!block;n#engine.io-client#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ms#0;n#!!block;n#dependencies#0;n#!!block;n#engine.io-client#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#engine.io-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#engine.io-parser#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#enhanced-resolve#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#enhanced-resolve#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#enhanced-resolve#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#memory-fs#0;n#!!block;n#dependencies#0;n#!!block;n#enhanced-resolve#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#ent#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#entities#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#errno#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#errno#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#error-ex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#error-ex#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#escape-html#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#escape-string-regexp#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#esprima#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#estraverse#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#esutils#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#etag#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#event-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#event-stream#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#eventemitter3#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#events#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#eventsource#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#eventsource#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#exit#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-slice#0;n#!!block;n#dependencies#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#array-unique#0;n#!!block;n#dependencies#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#braces#0;n#!!block;n#dependencies#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#braces#0;n#!!block;n#dependencies#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-number#0;n#!!block;n#dependencies#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#repeat-string#0;n#!!block;n#dependencies#0;n#!!block;n#expand-braces#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#expand-brackets#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#expand-brackets#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#expand-brackets#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!block;n#expand-brackets#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!block;n#expand-brackets#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!block;n#expand-brackets#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!block;n#expand-brackets#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#fill-range#0;n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#fill-range#0;n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-number#0;n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-number#0;n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#isarray#0;n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#isobject#0;n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#isobject#0;n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#kind-of#0;n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#kind-of#0;n#!!block;n#dependencies#0;n#!!block;n#expand-range#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#expand-tilde#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#expand-tilde#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#accepts#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#accepts#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#body-parser#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#body-parser#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#finalhandler#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#finalhandler#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#iconv-lite#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#qs#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#raw-body#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#raw-body#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#raw-body#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#depd#0;n#!!block;n#dependencies#0;n#!!block;n#raw-body#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#http-errors#0;n#!!block;n#dependencies#0;n#!!block;n#raw-body#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#http-errors#0;n#!!block;n#dependencies#0;n#!!block;n#raw-body#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#setprototypeof#0;n#!!block;n#dependencies#0;n#!!block;n#raw-body#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#safe-buffer#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#statuses#0;n#!!block;n#dependencies#0;n#!!block;n#express#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#extend#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-extendable#0;n#!!block;n#dependencies#0;n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-extendable#0;n#!!block;n#dependencies#0;n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#define-property#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#extend-shallow#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-accessor-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-accessor-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-data-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-data-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#is-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#requires#0;n#!!block;n#is-descriptor#0;n#!!block;n#dependencies#0;n#!!block;n#extglob#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#extsprintf#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#eyes#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#right-align#0;n#!!block;n#dependencies#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>

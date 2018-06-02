@@ -1,9 +1,10 @@
 // Angular & Router ES6 Imports
 import angular from 'angular';
-import angularUIRouter from 'angular-ui-router';
+import angularUIRouter from '@uirouter/angularjs';
 import appComponents from './components/components.js';
 import commonComponents from './common/components.js';
 import appServices from './services/services.js';
+// import HeroComponent from './components/hero'
 import appConfiguration from './app.config';
 
 // Single Style Entry Point

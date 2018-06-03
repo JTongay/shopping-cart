@@ -35,15 +35,17 @@ var config = {
     failOnHint: false
   },
   module: {
-    preLoaders: [{
-      test:    /\.js$/,
-      exclude: /node_modules/,
-      loader: 'jscs-loader'
-    }],
+    preLoaders: [
+      {
+        test:    /\.js$/,
+        exclude: /node_modules/,
+        loader: 'jscs-loader'
+      }
+    ],
     loaders: [
       {test: /\.js$/, exclude: /(node_modules)/, loader: 'babel'},
       {test: /\.html/, exclude: /(node_modules)/, loader: 'html-loader'},
-      {test: /\.s?css$/, loader: 'style!css!sass?includePaths[]=' + bourbon},
+      {test: /\.s?css$/, loader: 'style!css!sass'},
       {test: /\.(png|jpg)$/, loader: 'url-loader?mimetype=image/png'}
     ]
   }

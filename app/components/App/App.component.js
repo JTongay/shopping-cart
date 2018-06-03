@@ -1,6 +1,6 @@
-import './Home.scss';
+import './_App.scss';
 
-export class Home {
+export class App {
   constructor() {
     '$inject';
     this.test = 'booyah';

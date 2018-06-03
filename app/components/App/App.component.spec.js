@@ -1,4 +1,4 @@
-import {Home} from './home.component';
+import {App} from './App.component';
 
 describe('Hero', () => {
   let $rootScope, makeController;
@@ -6,7 +6,7 @@ describe('Hero', () => {
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new Home();
+      return new App();
     };
   }));
   it('should exist', () => {

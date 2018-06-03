@@ -63,13 +63,13 @@ gulp.task('component', () => {
   let name = yargs.argv.name;
   let parentPath = yargs.argv.parent || '';
   let destPath = path.join(resolveToComponents(), parentPath, name);
-  let indexPath = path.join(resolveToComponents(), parentPath, 'components.js');
+  let indexPath = path.join(resolveToComponents(), parentPath, 'index.js');
   let scssPath = path.join(resolveToGlobalSCSS(), parentPath, 'index.scss');
 
   let includeAdditionallSCSSFileInGlobalIndex = gulp.src(scssPath)
     .pipe(inject.append(`\n@import "~components/${name}/${name}.scss";`))
     .pipe(clean({force: true}))
-    .pipe(gulp.dest(resolveToGlobalSCSS()));    
+    .pipe(gulp.dest(resolveToGlobalSCSS()));
 
   let addNewImportAndDependanciesToComponentsJS = gulp.src(indexPath)
     .pipe(inject.prepend(`import ${name}Component from './${name}/${name}';\n`))
@@ -94,12 +94,12 @@ gulp.task('component', () => {
     .pipe(gulp.dest(destPath));
 
     return merge(
-      merge(addNewImportAndDependanciesToComponentsJS, createNewComponentBasedOnComponentTemplate), 
+      merge(addNewImportAndDependanciesToComponentsJS, createNewComponentBasedOnComponentTemplate),
       includeAdditionallSCSSFileInGlobalIndex
     );
 });
 
-// gulp common_component --name 'users' 
+// gulp common_component --name 'users'
 gulp.task('common_component', () => {
   let cap = (val) => {
     return val.charAt(0).toUpperCase() + val.slice(1);
@@ -113,7 +113,7 @@ gulp.task('common_component', () => {
   let includeAdditionallSCSSFileInGlobalIndex = gulp.src(scssPath)
     .pipe(inject.append(`\n@import "~common/${name}/${name}.scss";`))
     .pipe(clean({force: true}))
-    .pipe(gulp.dest(resolveToGlobalSCSS()));    
+    .pipe(gulp.dest(resolveToGlobalSCSS()));
 
   let addNewImportAndDependanciesToComponentsJS = gulp.src(indexPath)
     .pipe(inject.prepend(`import ${name}Component from './${name}/${name}';\n`))
@@ -138,12 +138,12 @@ gulp.task('common_component', () => {
     .pipe(gulp.dest(destPath));
 
     return merge(
-      merge(addNewImportAndDependanciesToComponentsJS, createNewCommonComponentBasedOnComponentTemplate), 
+      merge(addNewImportAndDependanciesToComponentsJS, createNewCommonComponentBasedOnComponentTemplate),
       includeAdditionallSCSSFileInGlobalIndex
     );
 });
 
-// gulp service --name <name> 
+// gulp service --name <name>
 gulp.task('service', () => {
   let cap = (val) => {
     return val.charAt(0).toUpperCase() + val.slice(1);

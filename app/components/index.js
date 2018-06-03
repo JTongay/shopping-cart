@@ -1,7 +1,12 @@
 import angular from 'angular';
 
-import {HomeComponent} from './Home/index';
+// import {HomeComponent} from './App';
+import {NavComponent} from './Nav';
+import {ShoppingListComponent} from './ShoppingList';
+import {ShoppingListItemComponent} from './ShoppingListItem';
 
 export const ComponentsModule = angular.module('app.components', [])
-  .component('home', HomeComponent)
+  .component('nav', NavComponent)
+  .component('shoppingList', ShoppingListComponent)
+  .component('shoppingListItem', ShoppingListItemComponent)
   .name;

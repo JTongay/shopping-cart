@@ -8,7 +8,7 @@ export default function config(
 
   const Home = {
     url: '/',
-    template: '<home></home>'
+    template: '<shopping-list></shopping-list>'
   };
 
   $stateProvider.state('home', Home);

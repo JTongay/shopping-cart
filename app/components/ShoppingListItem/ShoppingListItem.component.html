@@ -8,15 +8,20 @@
           <span class="md-subhead">Ingredients: {{::$ctrl.tea.ingredients}}</span>
           <span class="md-subhead">Rating: {{::$ctrl.tea.rating}}</span>
           <span class="md-subhead">In Stock? {{ ::$ctrl.tea.inStock | inStock }}</span>
-          <span class="md-subhead"></span>
+          <span class="md-subhead">Categories: <span ng-repeat="cat in $ctrl.tea.categories">{{cat}} </span></span>
         </md-card-title-text>
       </md-card-title>
       <md-card-title-media layout="row" layout-align="right">
         <img ng-src={{$ctrl.tea.imageUrl}} alt="">
       </md-card-title-media>
       <md-card-actions layout="row" layout-align="end center">
-        <md-button>Action 1</md-button>
-        <md-button>Action 2</md-button>
+        <span>Quantity: </span>
+        <md-input-container>
+          <md-select ng-model="quantity" aria-label="select">
+            <md-option ng-repeat="item in $ctrl.totalQuantity" ng-value="item">{{::item}}</md-option>
+          </md-select>
+        </md-input-container>
+        <md-button>Add to cart</md-button>
       </md-card-actions>
     </md-card>
   </div>

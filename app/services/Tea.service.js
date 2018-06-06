@@ -2,6 +2,7 @@ import { Tea } from '../utils/teaData';
 
 export default class TeaService {
   constructor() {
+    this.cart = [];
   }
 
   getTea() {
@@ -9,4 +10,13 @@ export default class TeaService {
       setTimeout(resolve(Tea), 500);
     })
   }
+
+  getCart() {
+    return this.cart;
+  }
+
+  setCart(val) {
+    this.cart.push(val);
+  }
+
 }

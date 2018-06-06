@@ -11,8 +11,14 @@ export default function config(
     template: '<shopping-list></shopping-list>'
   };
 
-  $stateProvider.state('home', Home);
+  const Checkout = {
+    url: '/checkout',
+    template: '<checkout></checkout>'
+  };
 
-  $locationProvider.html5Mode(true);
+  $stateProvider.state('home', Home);
+  $stateProvider.state('checkout', Checkout);
+
+  // $locationProvider.html5Mode(true);
   $urlRouterProvider.otherwise('/');
 };

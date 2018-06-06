@@ -7,6 +7,7 @@ import 'angular-material/angular-material.css';
 import 'angular-aria';
 import 'angular-material';
 import 'angular-messages';
+import 'angular-material-data-table';
 import { ComponentsModule } from './components';
 import { AppComponent } from './components/App';
 import TeaService from './services/Tea.service';
@@ -25,6 +26,7 @@ export const app = angular.module('app', [
     'ngAnimate',
     'ngMessages',
     'ngAria',
+    'md.data.table',
     angularUIRouter,
     ComponentsModule
   ])

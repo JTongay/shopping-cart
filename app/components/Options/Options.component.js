@@ -20,6 +20,15 @@ export default class Options {
     });
   }
 
+  setOptions() {
+    this.teaService.setFilterOptions(this.filterOptions);
+  }
+
+  clearOptions() {
+   this.filterOptions = {};
+   this.teaService.setFilterOptions({});
+  }
+
   flattenArray(arr) {
     let emptyArr = [];
     return emptyArr.concat.apply([], arr)

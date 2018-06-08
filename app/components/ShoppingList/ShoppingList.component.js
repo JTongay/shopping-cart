@@ -2,6 +2,7 @@ export default class ShoppingList {
   constructor(teaService) {
     '$inject';
     this.teaService = teaService;
+    this.filterOptions = this.teaService.getFilterOptions();
   }
 
   $onInit() {

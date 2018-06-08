@@ -3,8 +3,7 @@ import ShoppingList from './ShoppingList.component';
 
 export const ShoppingListComponent = {
   bindings: {
-    tea: '<',
-    filterOptions: '<'
+    tea: '<'
   },
   controller: ShoppingList,
   template

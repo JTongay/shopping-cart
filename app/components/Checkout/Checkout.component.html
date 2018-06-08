@@ -1,3 +1,4 @@
-<h1>Checkout Component</h1>
-<h3>Grand Total: $0.00</h3>
-<cart></cart>
+<h1>Your Cart</h1>
+<h3>Grand Total: {{$ctrl.grandTotal/100 | currency}}</h3>
+<cart cart="$ctrl.cart"></cart>
+<!--<cart></cart>-->

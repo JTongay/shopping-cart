@@ -8,9 +8,11 @@ import 'angular-aria';
 import 'angular-material';
 import 'angular-messages';
 import 'angular-material-data-table';
+import 'angular-material-data-table/dist/md-data-table.min.css';
 import { ComponentsModule } from './components';
 import { AppComponent } from './components/App';
 import TeaService from './services/Tea.service';
+import CartService from './services/Cart.service';
 import InStock from './filters/inStock.filter';
 
 // Single Style Entry Point
@@ -44,6 +46,7 @@ export const app = angular.module('app', [
     .primaryPalette('neonRed');
 })
   .service('teaService', TeaService)
+  .service('cartService', CartService)
   .filter('inStock', InStock);
 
 // Router Configuration

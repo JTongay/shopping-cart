@@ -2,7 +2,7 @@ import { Tea } from '../utils/teaData';
 
 export default class TeaService {
   constructor() {
-    this.cart = [];
+    this.filterOptions = {};
   }
 
   getTea() {
@@ -11,12 +11,12 @@ export default class TeaService {
     })
   }
 
-  getCart() {
-    return this.cart;
+  setFilterOptions(val) {
+    this.filterOptions = val;
   }
 
-  setCart(val) {
-    this.cart.push(val);
+  getFilterOptions() {
+    return this.filterOptions;
   }
 
 }

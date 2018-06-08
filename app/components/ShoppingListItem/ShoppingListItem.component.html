@@ -21,7 +21,7 @@
             <md-option ng-repeat="item in $ctrl.totalQuantity" ng-value="item">{{::item}}</md-option>
           </md-select>
         </md-input-container>
-        <md-button>Add to cart</md-button>
+        <md-button ng-click="$ctrl.addToCart($ctrl.tea, quantity)" ng-disabled="!quantity">Add to cart</md-button>
       </md-card-actions>
     </md-card>
   </div>

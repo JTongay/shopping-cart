@@ -1,11 +1,12 @@
 <div class="sort">
   <span>Sort By Category:</span>
-  <md-select ng-model="filterOptions.sortBy">
-    <md-option ng-repeat="option in $ctrl.options" ng-value="option">{{option}}</md-option>
+  <md-select ng-model="$ctrl.filterOptions.sortBy">
+    <md-option ng-repeat="option in $ctrl.options" ng-value="option" ng-click="$ctrl.setOptions()">{{option}}</md-option>
   </md-select>
   <md-input-container>
     <label for="search">Search By Name:</label>
-    <input type="text" id="search" ng-model="filterOptions.search">
+    <input type="text" id="search" ng-model="filterOptions.search" ng-keydown="$ctrl.setOptions()">
   </md-input-container>
+  <md-button class="md-raised" aria-label="Clear Options" ng-click="$ctrl.clearOptions()">Clear Options</md-button>
   <md-button class="md-raised" aria-label="Checkout" ui-sref="checkout">Checkout | Bag: Empty!</md-button>
 </div>

@@ -1,4 +1,4 @@
-<md-table-container>
+<md-table-container ng-if="$ctrl.cart.length">
   <table md-table md-row-select multiple>
     <thead md-head md-order="" md-on-reorder="">
       <tr md-row>
@@ -8,11 +8,28 @@
       </tr>
     </thead>
     <tbody md-body>
-      <tr md-row>
-        <td md-cell>booyah</td>
-        <td md-cell>booyah</td>
-        <td md-cell>booyah</td>
+      <tr md-row ng-repeat="tea in $ctrl.cart track by $index">
+        <td md-cell>
+          <p>{{tea.name}}</p>
+          <img ng-src={{tea.imageUrl}} alt="">
+          <p>
+            <md-button class="md-raised md-accent" ng-if="!$ctrl.editing" ng-click="$ctrl.triggerEditMode()">Edit Amount</md-button>
+            <div ng-if="$ctrl.editing">
+              <md-select ng-model="tea.quantity" ng-change="$ctrl.changeAmount(tea, $index)">
+                <md-option ng-repeat="quantity in $ctrl.quantity" ng-value="quantity" aria-label="quantity">{{quantity}}</md-option>
+              </md-select>
+              <md-button ng-click="$ctrl.triggerEditMode()">Submit</md-button>
+            </div>
+            <md-button class="md-raised md-warn" ng-click="$ctrl.deleteItem(tea)">Delete</md-button>
+          </p>
+        </td>
+        <td md-cell>{{tea.quantity}}</td>
+        <td md-cell>{{tea.total/100 | currency}}</td>
       </tr>
     </tbody>
   </table>
 </md-table-container>
+<section class="empty-cart" ng-if="!$ctrl.cart.length">
+  <h1>Empty Cart Fam</h1>
+  <md-button class="md-raised md-primary" ui-sref="home">Go Shopping!</md-button>
+</section>

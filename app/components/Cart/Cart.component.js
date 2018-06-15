@@ -1,10 +1,12 @@
 export default class Cart {
   constructor(
-    cartService
+    cartService,
+    $scope
   ) {
     '$inject';
     this.cartService = cartService;
     this.editing = false;
+    this.$scope = $scope;
     this.quantity = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     // this.cart = [{
     //   '_id': '55c8ee82152165d244b98300',
@@ -36,10 +38,15 @@ export default class Cart {
     //   }];
   }
 
+  changeTotal() {
+    this.$scope.$emit('UPDATED_TOTAL');
+    this.triggerEditMode();
+  }
+
   deleteItem(tea) {
-    this.cart = this.cart.filter((item) => {
-      return item._id !== tea._id;
-    })
+    this.cartService.deleteCartItem(tea);
+    this.cart = this.cartService.getCart();
+    this.$scope.$emit('DELETED_ITEM');
   }
 
   triggerEditMode() {

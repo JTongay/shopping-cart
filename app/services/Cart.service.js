@@ -1,6 +1,7 @@
 export default class CartService {
   constructor() {
     this.cart = [];
+    this.grandTotal = 0;
   }
 
   getCart() {
@@ -11,21 +12,28 @@ export default class CartService {
     this.cart.push(val)
   }
 
+  deleteCartItem(val) {
+    this.cart = this.cart.filter((item) => {
+      return item._id !== val._id
+    });
+  }
+
   setCartItem(val, index) {
     let newItem = Object.assign({}, val);
-    console.log(this.cart[index], 'previous');
-    console.log(newItem, 'newIteam');
+    newItem.total = newItem.quantity * newItem.price;
     this.cart[index] = newItem;
   }
 
   getGrandTotal() {
-    let grandTotal = 0;
+    this.grandTotal = 0;
     if (!this.cart.length) {
-      return grandTotal;
+      return this.grandTotal;
     }
     this.cart.forEach((tea) => {
-      grandTotal += (tea.price * tea.quantity);
+      this.grandTotal += tea.total;
     });
-    return grandTotal;
+    console.log(this.grandTotal, 'total in service');
+    console.log(this.cart);
+    return this.grandTotal;
   }
 };

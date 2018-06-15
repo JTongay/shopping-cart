@@ -15,10 +15,13 @@
           <p>
             <md-button class="md-raised md-accent" ng-if="!$ctrl.editing" ng-click="$ctrl.triggerEditMode()">Edit Amount</md-button>
             <div ng-if="$ctrl.editing">
-              <md-select ng-model="tea.quantity" ng-change="$ctrl.changeAmount(tea, $index)">
-                <md-option ng-repeat="quantity in $ctrl.quantity" ng-value="quantity" aria-label="quantity">{{quantity}}</md-option>
-              </md-select>
-              <md-button ng-click="$ctrl.triggerEditMode()">Submit</md-button>
+              <md-input-container>
+                <label for="editTea">Edit Quantity</label>
+                <md-select ng-model="tea.quantity" ng-change="$ctrl.changeAmount(tea, $index)" id="editTea">
+                  <md-option ng-repeat="quantity in $ctrl.quantity" ng-value="quantity" aria-label="quantity">{{quantity}}</md-option>
+                </md-select>
+                <md-button ng-click="$ctrl.changeTotal()">Submit</md-button>
+              </md-input-container>
             </div>
             <md-button class="md-raised md-warn" ng-click="$ctrl.deleteItem(tea)">Delete</md-button>
           </p>

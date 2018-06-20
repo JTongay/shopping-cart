@@ -7,4 +7,4 @@ export const CheckoutComponent = {
   },
   controller: Checkout,
   template
-}
+};

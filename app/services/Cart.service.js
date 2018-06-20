@@ -32,8 +32,6 @@ export default class CartService {
     this.cart.forEach((tea) => {
       this.grandTotal += tea.total;
     });
-    console.log(this.grandTotal, 'total in service');
-    console.log(this.cart);
     return this.grandTotal;
   }
 };

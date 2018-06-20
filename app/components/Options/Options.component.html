@@ -8,5 +8,8 @@
     <input type="text" id="search" ng-model="filterOptions.search" ng-keydown="$ctrl.setOptions()">
   </md-input-container>
   <md-button class="md-raised" aria-label="Clear Options" ng-click="$ctrl.clearOptions()">Clear Options</md-button>
-  <md-button class="md-raised" aria-label="Checkout" ui-sref="checkout">Checkout | Bag: Empty!</md-button>
+  <md-button class="md-raised" aria-label="Checkout" ui-sref="checkout">
+    <span ng-if="$ctrl.totalItems">Checkout | Bag: {{$ctrl.totalItems}}</span>
+    <span ng-if="!$ctrl.totalItems">Checkout | Bag: Empty!</span>
+  </md-button>
 </div>

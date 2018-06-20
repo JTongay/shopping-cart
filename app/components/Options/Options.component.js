@@ -1,11 +1,18 @@
 export default class Options {
   constructor(
-    teaService
+    teaService,
+    cartService,
+    $rootScope
   ) {
     '$inject';
     this.teaService = teaService;
+    this.cartService = cartService;
     this.options = [];
     this.filterOptions = {};
+    this.$rootScope = $rootScope;
+    this.$rootScope.$on('ADD_TO_CART', () => {
+      this.totalItems = this.cartService.getCart().length;
+    });
   }
 
   $onInit() {
@@ -18,6 +25,7 @@ export default class Options {
         return self.indexOf(val) === i;
       });
     });
+    this.totalItems = this.cartService.getCart().length;
   }
 
   setOptions() {
@@ -25,8 +33,8 @@ export default class Options {
   }
 
   clearOptions() {
-   this.filterOptions = {};
-   this.teaService.setFilterOptions({});
+    this.filterOptions = {};
+    this.teaService.setFilterOptions({});
   }
 
   flattenArray(arr) {

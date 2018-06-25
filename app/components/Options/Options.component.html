@@ -1,12 +1,16 @@
-<div class="sort">
-  <span>Sort By Category:</span>
-  <md-select ng-model="$ctrl.filterOptions.sortBy">
-    <md-option ng-repeat="option in $ctrl.options" ng-value="option" ng-click="$ctrl.setOptions()">{{option}}</md-option>
-  </md-select>
-  <md-input-container>
+<div class="sort" layout="row">
+  <md-input-container flex>
+    <label for="sort">Sort By Category:</label>
+    <md-select ng-model="$ctrl.filterOptions.sortBy" id="sort">
+      <md-option ng-repeat="option in $ctrl.options" ng-value="option" ng-click="$ctrl.setOptions()">{{option}}</md-option>
+    </md-select>
+  </md-input-container>
+  <md-input-container flex>
     <label for="search">Search By Name:</label>
     <input type="text" id="search" ng-model="filterOptions.search" ng-keydown="$ctrl.setOptions()">
   </md-input-container>
+</div>
+<div class="options-buttons">
   <md-button class="md-raised" aria-label="Clear Options" ng-click="$ctrl.clearOptions()">Clear Options</md-button>
   <md-button class="md-raised" aria-label="Checkout" ui-sref="checkout">
     <span ng-if="$ctrl.totalItems">Checkout | Bag: {{$ctrl.totalItems}}</span>

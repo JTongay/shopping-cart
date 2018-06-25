@@ -1,5 +1,4 @@
-<md-content class="md-padding" layout-xs="column" layout="row">
-  <div flex-xs flex flex-gt-xs="50" layout="row">
+<md-content>
     <md-card md-theme-watch>
       <md-card-title>
         <md-card-title-text>
@@ -17,12 +16,11 @@
       <md-card-actions layout="row" layout-align="end center">
         <span>Quantity: </span>
         <md-input-container>
-          <md-select ng-model="quantity" aria-label="select">
+          <md-select ng-model="$ctrl.quantity" aria-label="select">
             <md-option ng-repeat="item in $ctrl.totalQuantity" ng-value="item">{{::item}}</md-option>
           </md-select>
         </md-input-container>
-        <md-button ng-click="$ctrl.addToCart($ctrl.tea, quantity)" ng-disabled="!quantity">Add to cart</md-button>
+        <md-button ng-click="$ctrl.addToCart($ctrl.tea, $ctrl.quantity)" ng-disabled="!$ctrl.quantity">Add to cart</md-button>
       </md-card-actions>
     </md-card>
-  </div>
 </md-content>

@@ -1,7 +1,10 @@
+import './_Options.scss';
+
 export default class Options {
   constructor(
     teaService,
     cartService,
+    $mdDialog,
     $rootScope
   ) {
     '$inject';
@@ -10,6 +13,7 @@ export default class Options {
     this.options = [];
     this.filterOptions = {};
     this.$rootScope = $rootScope;
+    this.$mdDialog = $mdDialog;
     this.$rootScope.$on('ADD_TO_CART', () => {
       this.totalItems = this.cartService.getCart().length;
     });
@@ -35,6 +39,13 @@ export default class Options {
   clearOptions() {
     this.filterOptions = {};
     this.teaService.setFilterOptions({});
+    this.$mdDialog.show(
+      this.$mdDialog.alert()
+        .clickOutsideToClose(true)
+        .title('Clearing Options')
+        .textContent('Options cleared')
+        .ok('Close')
+    );
   }
 
   flattenArray(arr) {

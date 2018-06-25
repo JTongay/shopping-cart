@@ -1,3 +1,5 @@
+import './_ShoppingList.scss';
+
 export default class ShoppingList {
   constructor(teaService) {
     '$inject';

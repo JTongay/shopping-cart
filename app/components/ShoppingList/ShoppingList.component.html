@@ -1,5 +1,9 @@
-<h1>Shop for tea</h1>
+<h1 class="title">Tea Shoppe</h1>
 <options></options>
-<div ng-repeat="tea in $ctrl.allTea | filter: $ctrl.teaService.getFilterOptions().search | filter: $ctrl.teaService.getFilterOptions().sortBy" layout="row">
-  <shopping-list-item tea="tea" options="options" flex></shopping-list-item>
+<div layout="row" layout-align="center center" layout-wrap>
+  <div
+      ng-repeat="tea in $ctrl.allTea | filter: $ctrl.teaService.getFilterOptions().search | filter: $ctrl.teaService.getFilterOptions().sortBy"
+      flex="25">
+    <shopping-list-item tea="tea" options="options"></shopping-list-item>
+  </div>
 </div>

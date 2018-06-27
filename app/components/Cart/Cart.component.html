@@ -33,6 +33,9 @@
   </table>
 </md-table-container>
 <section class="empty-cart" ng-if="!$ctrl.cart.length">
-  <h1>Empty Cart Fam</h1>
+  <h1 class="empty-cart-title">Your cart is empty!</h1>
+  <div class="empty-cart-image">
+    <img src="http://icons.veryicon.com/png/Business/Ecommerce/Empty%20shopping%20cart.png" alt="empty cart">
+  </div>
   <md-button class="md-raised md-primary" ui-sref="home">Go Shopping!</md-button>
 </section>

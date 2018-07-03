@@ -8,8 +8,12 @@
 //@import "~common/navbar/navbar.scss";
 
 //@import "~components/Home/Home.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 h1 {
 	font-size: 6em;
 	letter-spacing: -1.5px;
 	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
 }

@@ -14,6 +14,7 @@ import { AppComponent } from './components/App';
 import TeaService from './services/Tea.service';
 import CartService from './services/Cart.service';
 import InStock from './filters/inStock.filter';
+import mdTheme from './theme';
 
 // Single Style Entry Point
 import './index.scss';
@@ -34,17 +35,7 @@ export const app = angular.module('app', [
   ])
   .component('app', AppComponent)
   .config(config)
-  .config(($mdThemingProvider)=> {
-  const neonRedMap = $mdThemingProvider.extendPalette('red', {
-    '500': '#ff0000',
-    'contrastDefaultColor': 'dark'
-  });
-  // Register the new color palette map with the name <code>neonRed</code>
-  $mdThemingProvider.definePalette('neonRed', neonRedMap);
-  // Use that theme for the primary intentions
-  $mdThemingProvider.theme('default')
-    .primaryPalette('neonRed');
-})
+  .config(mdTheme)
   .service('teaService', TeaService)
   .service('cartService', CartService)
   .filter('inStock', InStock);

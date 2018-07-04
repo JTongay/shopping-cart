@@ -3,12 +3,12 @@ import angular from 'angular';
 import angularUIRouter from '@uirouter/angularjs';
 import config from './config';
 import 'angular-animate';
-import 'angular-material/angular-material.css';
 import 'angular-aria';
 import 'angular-material';
 import 'angular-messages';
 import 'angular-material-data-table';
 import 'angular-material-data-table/dist/md-data-table.min.css';
+import 'angular-material/angular-material.css';
 import { ComponentsModule } from './components';
 import { AppComponent } from './components/App';
 import TeaService from './services/Tea.service';
@@ -33,9 +33,13 @@ export const app = angular.module('app', [
     angularUIRouter,
     ComponentsModule
   ])
+  .config(function($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+      .primaryPalette('pink')
+      .accentPalette('orange');
+  })
   .component('app', AppComponent)
   .config(config)
-  .config(mdTheme)
   .service('teaService', TeaService)
   .service('cartService', CartService)
   .filter('inStock', InStock);

@@ -1,8 +1,9 @@
 import './_ShoppingList.scss';
 
 export default class ShoppingList {
-  constructor(teaService) {
+  constructor(teaService, $mdTheming) {
     '$inject';
+    this.$mdTheming = $mdTheming;
     this.teaService = teaService;
     this.filterOptions = this.teaService.getFilterOptions();
   }
@@ -11,5 +12,6 @@ export default class ShoppingList {
     this.teaService.getTea().then((data) => {
       this.allTea = data;
     });
+    console.log(this.$mdTheming.PALETTES)
   }
 }

@@ -1,5 +1,16 @@
 shopping-list {
-	.title {
-		text-align: center;
+	.background-image {
+		img {
+			width: 100%;
+			object-fit: fill;
+			position: relative;
+		}
+		.image-text {
+			position: absolute;
+			top: 140px;
+			left: 40px;
+			padding: 30px;
+			width: auto;
+		}
 	}
 }

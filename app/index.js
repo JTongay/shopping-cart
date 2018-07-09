@@ -31,7 +31,7 @@ export const app = angular.module('app', [
     'ngMessages',
     'ngAria',
     'md.data.table',
-    angularUIRouter,
+    'ui.router',
     ComponentsModule
   ])
   .config(function($mdThemingProvider) {

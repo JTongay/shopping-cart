@@ -1,3 +1,5 @@
+import './_ShoppingListItem.scss';
+
 export default class ShoppingListItem {
   constructor(
     teaService,

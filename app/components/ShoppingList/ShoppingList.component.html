@@ -6,10 +6,12 @@
   </div>
 </div>
 <options></options>
-<div layout="row" layout-align="center center" layout-wrap>
+<div layout="row" layout-align="center center" layout-wrap class="shopping-list">
   <div
       ng-repeat="tea in $ctrl.allTea | filter: $ctrl.teaService.getFilterOptions().search | filter: $ctrl.teaService.getFilterOptions().sortBy"
-      flex="25">
+      flex="25"
+      layout-wrap
+  >
     <shopping-list-item tea="tea" options="options"></shopping-list-item>
   </div>
 </div>

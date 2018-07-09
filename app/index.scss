@@ -11,6 +11,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
 h1 {
 	font-size: 6em;
 	letter-spacing: -1.5px;

@@ -1,7 +1,7 @@
-<md-content>
-    <md-card md-theme-watch>
+<md-content layout="row">
+    <md-card md-theme-watch layout-margin>
       <md-card-title>
-        <md-card-title-text>
+        <md-card-title-text flex>
           <span class="md-headline">{{::$ctrl.tea.name}}</span>
           <span class="md-subhead">Price: {{::$ctrl.tea.price/100 | currency}}</span>
           <span class="md-subhead">Ingredients: {{::$ctrl.tea.ingredients}}</span>

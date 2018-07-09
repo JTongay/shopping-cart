@@ -1,9 +1,15 @@
 options {
-	.sort {
-		margin: 0 30px;
-	}
-	.options-buttons {
-		text-align: center;
-		margin: 20px 0;
+	.options-section {
+		padding: 40px;
+		.options-header {
+			text-align: center;
+		}
+		.sort {
+			margin: 0 30px;
+		}
+		.options-buttons {
+			text-align: center;
+			margin: 20px 0;
+		}
 	}
 }

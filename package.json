@@ -1,6 +1,6 @@
 {
-  "name": "angular-starter-es6-webpack",
-  "version": "1.0.3",
+  "name": "shopping-cart",
+  "version": "1.0.0",
   "description": "An Application Shell for generating Angular Applications with Webpack and ES6",
   "main": "app.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "webpack",
     "es6"
   ],
-  "author": "Sean Larkin",
+  "author": "Joseph Tongay",
   "license": "ISC",
   "devDependencies": {
     "angular-mocks": "^1.4.7",

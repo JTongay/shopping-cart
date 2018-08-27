@@ -12,6 +12,5 @@ export default class ShoppingList {
     this.teaService.getTea().then((data) => {
       this.allTea = data;
     });
-    console.log(this.$mdTheming.PALETTES)
   }
 }

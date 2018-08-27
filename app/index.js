@@ -1,6 +1,6 @@
 // Angular & Router ES6 Imports
 import angular from 'angular';
-import angularUIRouter from '@uirouter/angularjs';
+import angularUIRouter from 'angular-ui-router';
 import config from './config';
 import 'angular-animate';
 import 'angular-aria';

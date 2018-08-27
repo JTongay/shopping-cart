@@ -6,7 +6,5 @@ export class App {
     this.test = 'booyah';
   }
 
-  $onInit() {
-    console.log('booyah');
-  }
+  $onInit() {}
 }

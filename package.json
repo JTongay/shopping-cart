@@ -1,6 +1,6 @@
 {
   "name": "shopping-cart",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "An Application Shell for generating Angular Applications with Webpack and ES6",
   "main": "app.js",
   "scripts": {
@@ -47,13 +47,13 @@
     "yargs": "^3.9.0"
   },
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.18",
     "angular": "^1.6.10",
     "angular-animate": "^1.7.0",
     "angular-aria": "^1.7.0",
     "angular-material": "^1.1.9",
     "angular-material-data-table": "^0.10.10",
     "angular-messages": "^1.7.0",
+    "angular-ui-router": "^1.0.20",
     "babel-core": "^6.13.2",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.13.2",

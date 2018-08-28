@@ -19,9 +19,9 @@ export default function config(
   $stateProvider.state('home', Home);
   $stateProvider.state('checkout', Checkout);
 
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  });
+  // $locationProvider.html5Mode({
+  //   enabled: true,
+  //   requireBase: false
+  // });
   $urlRouterProvider.otherwise('/');
 };

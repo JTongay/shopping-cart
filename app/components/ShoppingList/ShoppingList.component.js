@@ -1,10 +1,12 @@
 import './_ShoppingList.scss';
 
 export default class ShoppingList {
-  constructor(teaService, $mdTheming) {
+  constructor(teaService, $mdTheming, $animate, $timeout) {
     '$inject';
     this.$mdTheming = $mdTheming;
     this.teaService = teaService;
+    this.$animate = $animate;
+    this.$timeout = $timeout;
     this.filterOptions = this.teaService.getFilterOptions();
   }
 
@@ -12,5 +14,9 @@ export default class ShoppingList {
     this.teaService.getTea().then((data) => {
       this.allTea = data;
     });
+    this.show = false;
+    this.$timeout(() => {
+      this.show = true;
+    }, 200);
   }
 }

@@ -12,6 +12,22 @@ shopping-list {
 			left: 40px;
 			padding: 30px;
 			width: auto;
+			.title.ng-enter,
+			.title.ng-leave {
+				transition: all 1s ease-in;
+				position: relative;
+			}
+			.title.ng-enter {
+				opacity: 0;
+			}
+			.title.ng-enter-active{
+				opacity: 1;
+			}
+			.title.ng-leave {
+				opacity: 1;
+			}
+
 		}
 	}
 }
+

@@ -1,4 +1,5 @@
 import angular from 'angular';
+import 'angular-animate';
 
 // import {HomeComponent} from './App';
 import { NavComponent } from './Nav';
@@ -8,7 +9,7 @@ import { OptionsComponent } from './Options';
 import { CheckoutComponent } from './Checkout';
 import { CartComponent } from './Cart';
 
-export const ComponentsModule = angular.module('app.components', [])
+export const ComponentsModule = angular.module('app.components', ['ngAnimate'])
   .component('nav', NavComponent)
   .component('shoppingList', ShoppingListComponent)
   .component('shoppingListItem', ShoppingListItemComponent)

@@ -45,6 +45,9 @@ export const app = angular.module('app', [
   .service('cartService', CartService)
   .directive('caffeineScale', CaffeineMeterDirective)
   .filter('inStock', InStock);
+  // .run(($animate) => {
+  //   $animate.enabled(true);
+  // });
 
 // Router Configuration
 // Components must be declared first since

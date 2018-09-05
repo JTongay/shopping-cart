@@ -9,70 +9,77 @@ webpackJsonp([1],[
 	});
 	exports.app = undefined;
 	
-	var _angular = __webpack_require__(16);
+	var _angular = __webpack_require__(12);
 	
 	var _angular2 = _interopRequireDefault(_angular);
 	
-	var _angularUiRouter = __webpack_require__(70);
+	var _angularUiRouter = __webpack_require__(74);
 	
 	var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 	
-	var _config = __webpack_require__(112);
+	var _angularInview = __webpack_require__(77);
+	
+	var _angularInview2 = _interopRequireDefault(_angularInview);
+	
+	var _config = __webpack_require__(118);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
-	__webpack_require__(30);
+	__webpack_require__(16);
 	
-	__webpack_require__(31);
+	__webpack_require__(22);
 	
-	__webpack_require__(32);
+	__webpack_require__(23);
 	
-	__webpack_require__(69);
+	__webpack_require__(47);
 	
-	__webpack_require__(68);
+	__webpack_require__(46);
 	
-	__webpack_require__(134);
+	__webpack_require__(142);
 	
-	__webpack_require__(135);
+	__webpack_require__(143);
 	
-	var _components = __webpack_require__(111);
+	var _components = __webpack_require__(117);
 	
-	var _App = __webpack_require__(98);
+	var _App = __webpack_require__(102);
 	
-	var _Tea = __webpack_require__(116);
+	var _Tea = __webpack_require__(122);
 	
 	var _Tea2 = _interopRequireDefault(_Tea);
 	
-	var _Cart = __webpack_require__(115);
+	var _Cart = __webpack_require__(121);
 	
 	var _Cart2 = _interopRequireDefault(_Cart);
 	
-	var _inStock = __webpack_require__(114);
+	var _inStock = __webpack_require__(120);
 	
 	var _inStock2 = _interopRequireDefault(_inStock);
 	
-	var _CaffeineMeter = __webpack_require__(113);
+	var _CaffeineMeter = __webpack_require__(119);
 	
 	var _CaffeineMeter2 = _interopRequireDefault(_CaffeineMeter);
 	
-	var _theme = __webpack_require__(117);
+	var _theme = __webpack_require__(123);
 	
 	var _theme2 = _interopRequireDefault(_theme);
 	
-	__webpack_require__(133);
+	__webpack_require__(141);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// Angular & Router ES6 Imports
 	if (false) {
 	  console.log('ENV:', ENVIRONMENT);
 	  require('angular-mocks/angular-mocks');
 	}
 	
 	// Single Style Entry Point
-	var app = exports.app = _angular2.default.module('app', ['ngMaterial', 'ngAnimate', 'ngMessages', 'ngAria', 'md.data.table', 'ui.router', _components.ComponentsModule]).config(function ($mdThemingProvider) {
+	// Angular & Router ES6 Imports
+	var app = exports.app = _angular2.default.module('app', ['ngMaterial', 'ngAnimate', 'ngMessages', 'ngAria', 'md.data.table', _angularInview2.default, 'ui.router', _components.ComponentsModule]).config(function ($mdThemingProvider) {
 	  $mdThemingProvider.theme('default').primaryPalette('pink').accentPalette('orange');
 	}).component('app', _App.AppComponent).config(_config2.default).service('teaService', _Tea2.default).service('cartService', _Cart2.default).directive('caffeineScale', _CaffeineMeter2.default).filter('inStock', _inStock2.default);
+	// .run(($animate) => {
+	//   $animate.enabled(true);
+	// });
 	
 	// Router Configuration
 	// Components must be declared first since
@@ -391,7 +398,10 @@ webpackJsonp([1],[
 /* 30 */,
 /* 31 */,
 /* 32 */,
-/* 33 */
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -405,7 +415,7 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 34 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -419,7 +429,7 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 35 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -427,13 +437,13 @@ webpackJsonp([1],[
 	
 	
 	// module
-	exports.push([module.id, "nav .tea-icon {\n  width: 30px;\n  margin-right: 10px; }\n", ""]);
+	exports.push([module.id, "nav {\n  position: absolute;\n  z-index: 1;\n  display: flex;\n  width: 100%; }\n  nav .tea-icon {\n    width: 30px;\n    margin-right: 10px; }\n", ""]);
 	
 	// exports
 
 
 /***/ }),
-/* 36 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -447,21 +457,7 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "shopping-list .background-image img {\n  width: 100%;\n  object-fit: fill;\n  position: relative;\n  filter: contrast(25%); }\n\nshopping-list .background-image .image-text {\n  position: absolute;\n  top: 140px;\n  left: 40px;\n  padding: 30px;\n  width: auto; }\n", ""]);
-	
-	// exports
-
-
-/***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -475,7 +471,23 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 39 */
+/* 41 */
+40,
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "splash .background-image .background {\n  width: 100%;\n  height: 600px;\n  background-color: #f02261;\n  position: relative; }\n  splash .background-image .background img {\n    height: inherit;\n    float: right;\n    padding-right: 25px; }\n  splash .background-image .background img.ng-enter,\n  splash .background-image .background img.ng-leave {\n    transition: all 2s ease-in; }\n  splash .background-image .background img.ng-enter {\n    opacity: 0; }\n  splash .background-image .background img.ng-enter-active {\n    opacity: 0.5; }\n  splash .background-image .background img.ng-leave {\n    opacity: 0.75; }\n\nsplash .background-image .image-text {\n  position: absolute;\n  top: 140px;\n  left: 40px;\n  padding: 30px;\n  width: 50%; }\n  splash .background-image .image-text .title.ng-enter,\n  splash .background-image .image-text .title.ng-leave {\n    transition: all 1s ease-in;\n    position: relative; }\n  splash .background-image .image-text .title.ng-enter {\n    opacity: 0; }\n  splash .background-image .image-text .title.ng-enter-active {\n    opacity: 1; }\n  splash .background-image .image-text .title.ng-leave {\n    opacity: 1; }\n", ""]);
+	
+	// exports
+
+
+/***/ }),
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -489,7 +501,7 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 40 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -503,7 +515,7 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 41 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -517,10 +529,6 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
 /* 46 */,
 /* 47 */,
 /* 48 */,
@@ -552,7 +560,395 @@ webpackJsonp([1],[
 /* 74 */,
 /* 75 */,
 /* 76 */,
-/* 77 */,
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// # Angular-Inview
+	// - Author: [Nicola Peduzzi](https://github.com/thenikso)
+	// - Repository: https://github.com/thenikso/angular-inview
+	// - Install with: `npm install angular-inview`
+	// - Version: **3.0.0**
+	(function() {
+	'use strict';
+	
+	// An [angular.js](https://angularjs.org) directive to evaluate an expression if
+	// a DOM element is or not in the current visible browser viewport.
+	// Use it in your AngularJS app by including the javascript and requireing it:
+	//
+	// `angular.module('myApp', ['angular-inview'])`
+	var moduleName = 'angular-inview';
+	angular.module(moduleName, [])
+	
+	// ## in-view directive
+	//
+	// ### Usage
+	// ```html
+	// <any in-view="{expression}" [in-view-options="{object}"]></any>
+	// ```
+	.directive('inView', ['$parse', inViewDirective])
+	
+	// ## in-view-container directive
+	.directive('inViewContainer', inViewContainerDirective);
+	
+	// ## Implementation
+	function inViewDirective ($parse) {
+	  return {
+	    // Evaluate the expression passet to the attribute `in-view` when the DOM
+	    // element is visible in the viewport.
+	    restrict: 'A',
+	    require: '?^^inViewContainer',
+	    link: function inViewDirectiveLink (scope, element, attrs, container) {
+	      // in-view-options attribute can be specified with an object expression
+	      // containing:
+	      //   - `offset`: An array of values to offset the element position.
+	      //     Offsets are expressed as arrays of 4 numbers [top, right, bottom, left].
+	      //     Like CSS, you can also specify only 2 numbers [top/bottom, left/right].
+	      //     Instead of numbers, some array elements can be a string with a percentage.
+	      //     Positive numbers are offsets outside the element rectangle and
+	      //     negative numbers are offsets to the inside.
+	      //   - `viewportOffset`: Like the element offset but appied to the viewport.
+	      //   - `generateDirection`: Indicate if the `direction` information should
+	      //     be included in `$inviewInfo` (default false).
+	      //   - `generateParts`: Indicate if the `parts` information should
+	      //     be included in `$inviewInfo` (default false).
+	      //   - `throttle`: Specify a number of milliseconds by which to limit the
+	      //     number of incoming events.
+	      var options = {};
+	      if (attrs.inViewOptions) {
+	        options = scope.$eval(attrs.inViewOptions);
+	      }
+	      if (options.offset) {
+	        options.offset = normalizeOffset(options.offset);
+	      }
+	      if (options.viewportOffset) {
+	        options.viewportOffset = normalizeOffset(options.viewportOffset);
+	      }
+	
+	      // Build reactive chain from an initial event
+	      var viewportEventSignal = signalSingle({ type: 'initial' })
+	
+	      // Merged with the window events
+	      .merge(signalFromEvent(window, 'checkInView click ready wheel mousewheel DomMouseScroll MozMousePixelScroll resize scroll touchmove mouseup keydown'))
+	
+	      // Merge with container's events signal
+	      if (container) {
+	        viewportEventSignal = viewportEventSignal.merge(container.eventsSignal);
+	      }
+	
+	      // Throttle if option specified
+	      if (options.throttle) {
+	        viewportEventSignal = viewportEventSignal.throttle(options.throttle);
+	      }
+	
+	      // Map to viewport intersection and in-view informations
+	      var inviewInfoSignal = viewportEventSignal
+	
+	      // Inview information structure contains:
+	      //   - `inView`: a boolean value indicating if the element is
+	      //     visible in the viewport;
+	      //   - `changed`: a boolean value indicating if the inview status
+	      //     changed after the last event;
+	      //   - `event`: the event that initiated the in-view check;
+	      .map(function(event) {
+	        var viewportRect;
+	        if (container) {
+	          viewportRect = container.getViewportRect();
+	          // TODO merge with actual window!
+	        } else {
+	          viewportRect = getViewportRect();
+	        }
+	        viewportRect = offsetRect(viewportRect, options.viewportOffset);
+	        var elementRect = offsetRect(element[0].getBoundingClientRect(), options.offset);
+	        var isVisible = !!(element[0].offsetWidth || element[0].offsetHeight || element[0].getClientRects().length);
+	        var info = {
+	          inView: isVisible && intersectRect(elementRect, viewportRect),
+	          event: event,
+	          element: element,
+	          elementRect: elementRect,
+	          viewportRect: viewportRect
+	        };
+	        // Add inview parts
+	        if (options.generateParts && info.inView) {
+	          info.parts = {};
+	          info.parts.top = elementRect.top >= viewportRect.top;
+	          info.parts.left = elementRect.left >= viewportRect.left;
+	          info.parts.bottom = elementRect.bottom <= viewportRect.bottom;
+	          info.parts.right = elementRect.right <= viewportRect.right;
+	        }
+	        return info;
+	      })
+	
+	      // Add the changed information to the inview structure.
+	      .scan({}, function (lastInfo, newInfo) {
+	        // Add inview direction info
+	        if (options.generateDirection && newInfo.inView && lastInfo.elementRect) {
+	          newInfo.direction = {
+	            horizontal: newInfo.elementRect.left - lastInfo.elementRect.left,
+	            vertical: newInfo.elementRect.top - lastInfo.elementRect.top
+	          };
+	        }
+	        // Calculate changed flag
+	        newInfo.changed =
+	          newInfo.inView !== lastInfo.inView ||
+	          !angular.equals(newInfo.parts, lastInfo.parts) ||
+	          !angular.equals(newInfo.direction, lastInfo.direction);
+	        return newInfo;
+	      })
+	
+	      // Filters only informations that should be forwarded to the callback
+	      .filter(function (info) {
+	        // Don't forward if no relevant infomation changed
+	        if (!info.changed) {
+	          return false;
+	        }
+	        // Don't forward if not initially in-view
+	        if (info.event.type === 'initial' && !info.inView) {
+	          return false;
+	        }
+	        return true;
+	      });
+	
+	      // Execute in-view callback
+	      var inViewExpression = $parse(attrs.inView);
+	      var dispose = inviewInfoSignal.subscribe(function (info) {
+	        scope.$applyAsync(function () {
+	          inViewExpression(scope, {
+	            '$inview': info.inView,
+	            '$inviewInfo': info
+	          });
+	        });
+	      });
+	
+	      // Dispose of reactive chain
+	      scope.$on('$destroy', dispose);
+	    }
+	  }
+	}
+	
+	function inViewContainerDirective () {
+	  return {
+	    restrict: 'A',
+	    controller: ['$element', function ($element) {
+	      this.element = $element;
+	      this.eventsSignal = signalFromEvent($element, 'scroll');
+	      this.getViewportRect = function () {
+	        return $element[0].getBoundingClientRect();
+	      };
+	    }]
+	  }
+	}
+	
+	// ## Utilities
+	
+	function getViewportRect () {
+	  var result = {
+	    top: 0,
+	    left: 0,
+	    width: window.innerWidth,
+	    right: window.innerWidth,
+	    height: window.innerHeight,
+	    bottom: window.innerHeight
+	  };
+	  if (result.height) {
+	    return result;
+	  }
+	  var mode = document.compatMode;
+	  if (mode === 'CSS1Compat') {
+	    result.width = result.right = document.documentElement.clientWidth;
+	    result.height = result.bottom = document.documentElement.clientHeight;
+	  } else {
+	    result.width = result.right = document.body.clientWidth;
+	    result.height = result.bottom = document.body.clientHeight;
+	  }
+	  return result;
+	}
+	
+	function intersectRect (r1, r2) {
+	  return !(r2.left > r1.right ||
+	           r2.right < r1.left ||
+	           r2.top > r1.bottom ||
+	           r2.bottom < r1.top);
+	}
+	
+	function normalizeOffset (offset) {
+	  if (!angular.isArray(offset)) {
+	    return [offset, offset, offset, offset];
+	  }
+	  if (offset.length == 2) {
+	    return offset.concat(offset);
+	  }
+	  else if (offset.length == 3) {
+	    return offset.concat([offset[1]]);
+	  }
+	  return offset;
+	}
+	
+	function offsetRect (rect, offset) {
+	  if (!offset) {
+	    return rect;
+	  }
+	  var offsetObject = {
+	    top: isPercent(offset[0]) ? (parseFloat(offset[0]) * rect.height / 100) : offset[0],
+	    right: isPercent(offset[1]) ? (parseFloat(offset[1]) * rect.width / 100) : offset[1],
+	    bottom: isPercent(offset[2]) ? (parseFloat(offset[2]) * rect.height / 100) : offset[2],
+	    left: isPercent(offset[3]) ? (parseFloat(offset[3]) * rect.width / 100) : offset[3]
+	  };
+	  // Note: ClientRect object does not allow its properties to be written to therefore a new object has to be created.
+	  return {
+	    top: rect.top - offsetObject.top,
+	    left: rect.left - offsetObject.left,
+	    bottom: rect.bottom + offsetObject.bottom,
+	    right: rect.right + offsetObject.right,
+	    height: rect.height + offsetObject.top + offsetObject.bottom,
+	    width: rect.width + offsetObject.left + offsetObject.right
+	  };
+	}
+	
+	function isPercent (n) {
+	  return angular.isString(n) && n.indexOf('%') > 0;
+	}
+	
+	// ## QuickSignal FRP
+	// A quick and dirty implementation of Rx to have a streamlined code in the
+	// directives.
+	
+	// ### QuickSignal
+	//
+	// - `didSubscribeFunc`: a function receiving a `subscriber` as described below
+	//
+	// Usage:
+	//     var mySignal = new QuickSignal(function(subscriber) { ... })
+	function QuickSignal (didSubscribeFunc) {
+	  this.didSubscribeFunc = didSubscribeFunc;
+	}
+	
+	// Subscribe to a signal and consume the steam of data.
+	//
+	// Returns a function that can be called to stop the signal stream of data and
+	// perform cleanup.
+	//
+	// A `subscriber` is a function that will be called when a new value arrives.
+	// a `subscriber.$dispose` property can be set to a function to be called uppon
+	// disposal. When setting the `$dispose` function, the previously set function
+	// should be chained.
+	QuickSignal.prototype.subscribe = function (subscriber) {
+	  this.didSubscribeFunc(subscriber);
+	  var dispose = function () {
+	    if (subscriber.$dispose) {
+	      subscriber.$dispose();
+	      subscriber.$dispose = null;
+	    }
+	  }
+	  return dispose;
+	}
+	
+	QuickSignal.prototype.map = function (f) {
+	  var s = this;
+	  return new QuickSignal(function (subscriber) {
+	    subscriber.$dispose = s.subscribe(function (nextValue) {
+	      subscriber(f(nextValue));
+	    });
+	  });
+	};
+	
+	QuickSignal.prototype.filter = function (f) {
+	  var s = this;
+	  return new QuickSignal(function (subscriber) {
+	    subscriber.$dispose = s.subscribe(function (nextValue) {
+	      if (f(nextValue)) {
+	        subscriber(nextValue);
+	      }
+	    });
+	  });
+	};
+	
+	QuickSignal.prototype.scan = function (initial, scanFunc) {
+	  var s = this;
+	  return new QuickSignal(function (subscriber) {
+	    var last = initial;
+	    subscriber.$dispose = s.subscribe(function (nextValue) {
+	      last = scanFunc(last, nextValue);
+	      subscriber(last);
+	    });
+	  });
+	}
+	
+	QuickSignal.prototype.merge = function (signal) {
+	  return signalMerge(this, signal);
+	};
+	
+	QuickSignal.prototype.throttle = function (threshhold) {
+	  var s = this, last, deferTimer;
+	  return new QuickSignal(function (subscriber) {
+	    var chainDisposable = s.subscribe(function () {
+	      var now = +new Date,
+	          args = arguments;
+	      if (last && now < last + threshhold) {
+	        clearTimeout(deferTimer);
+	        deferTimer = setTimeout(function () {
+	          last = now;
+	          subscriber.apply(null, args);
+	        }, threshhold);
+	      } else {
+	        last = now;
+	        subscriber.apply(null, args);
+	      }
+	    });
+	    subscriber.$dispose = function () {
+	      clearTimeout(deferTimer);
+	      if (chainDisposable) chainDisposable();
+	    };
+	  });
+	};
+	
+	function signalMerge () {
+	  var signals = arguments;
+	  return new QuickSignal(function (subscriber) {
+	    var disposables = [];
+	    for (var i = signals.length - 1; i >= 0; i--) {
+	      disposables.push(signals[i].subscribe(function () {
+	        subscriber.apply(null, arguments);
+	      }));
+	    }
+	    subscriber.$dispose = function () {
+	      for (var i = disposables.length - 1; i >= 0; i--) {
+	        if (disposables[i]) disposables[i]();
+	      }
+	    }
+	  });
+	}
+	
+	// Returns a signal from DOM events of a target.
+	function signalFromEvent (target, event) {
+	  return new QuickSignal(function (subscriber) {
+	    var handler = function (e) {
+	      subscriber(e);
+	    };
+	    var el = angular.element(target);
+	    event.split(' ').map(e => el[0].addEventListener(e, handler, true));
+	    subscriber.$dispose = function () {
+	      event.split(' ').map(e => el[0].removeEventListener(e, handler, true));
+	    };
+	  });
+	}
+	
+	function signalSingle (value) {
+	  return new QuickSignal(function (subscriber) {
+	    setTimeout(function() { subscriber(value); });
+	  });
+	}
+	
+	// Module loaders exports
+	if (true) {
+	  !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(12)], __WEBPACK_AMD_DEFINE_FACTORY__ = (moduleName), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else if (typeof module !== 'undefined' && module && module.exports) {
+	  module.exports = moduleName;
+	}
+	
+	})();
+
+
+/***/ }),
 /* 78 */,
 /* 79 */,
 /* 80 */,
@@ -572,7 +968,11 @@ webpackJsonp([1],[
 /* 94 */,
 /* 95 */,
 /* 96 */,
-/* 97 */
+/* 97 */,
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -584,7 +984,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(127);
+	__webpack_require__(134);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -606,7 +1006,7 @@ webpackJsonp([1],[
 	}();
 
 /***/ }),
-/* 98 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -616,11 +1016,11 @@ webpackJsonp([1],[
 	});
 	exports.AppComponent = undefined;
 	
-	var _AppComponent = __webpack_require__(119);
+	var _AppComponent = __webpack_require__(125);
 	
 	var _AppComponent2 = _interopRequireDefault(_AppComponent);
 	
-	var _App = __webpack_require__(97);
+	var _App = __webpack_require__(101);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -630,7 +1030,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 99 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -641,7 +1041,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(128);
+	__webpack_require__(135);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -689,7 +1089,7 @@ webpackJsonp([1],[
 	exports.default = Cart;
 
 /***/ }),
-/* 100 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -699,11 +1099,11 @@ webpackJsonp([1],[
 	});
 	exports.CartComponent = undefined;
 	
-	var _Cart = __webpack_require__(99);
+	var _Cart = __webpack_require__(103);
 	
 	var _Cart2 = _interopRequireDefault(_Cart);
 	
-	var _CartComponent = __webpack_require__(120);
+	var _CartComponent = __webpack_require__(126);
 	
 	var _CartComponent2 = _interopRequireDefault(_CartComponent);
 	
@@ -718,7 +1118,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 101 */
+/* 105 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -763,7 +1163,7 @@ webpackJsonp([1],[
 	exports.default = Checkout;
 
 /***/ }),
-/* 102 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -773,11 +1173,11 @@ webpackJsonp([1],[
 	});
 	exports.CheckoutComponent = undefined;
 	
-	var _Checkout = __webpack_require__(101);
+	var _Checkout = __webpack_require__(105);
 	
 	var _Checkout2 = _interopRequireDefault(_Checkout);
 	
-	var _CheckoutComponent = __webpack_require__(121);
+	var _CheckoutComponent = __webpack_require__(127);
 	
 	var _CheckoutComponent2 = _interopRequireDefault(_CheckoutComponent);
 	
@@ -792,7 +1192,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 103 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -801,7 +1201,7 @@ webpackJsonp([1],[
 	  value: true
 	});
 	
-	__webpack_require__(129);
+	__webpack_require__(136);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -812,7 +1212,7 @@ webpackJsonp([1],[
 	exports.default = Nav;
 
 /***/ }),
-/* 104 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -822,11 +1222,11 @@ webpackJsonp([1],[
 	});
 	exports.NavComponent = undefined;
 	
-	var _Nav = __webpack_require__(103);
+	var _Nav = __webpack_require__(107);
 	
 	var _Nav2 = _interopRequireDefault(_Nav);
 	
-	var _NavComponent = __webpack_require__(122);
+	var _NavComponent = __webpack_require__(128);
 	
 	var _NavComponent2 = _interopRequireDefault(_NavComponent);
 	
@@ -838,7 +1238,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 105 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -849,7 +1249,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(130);
+	__webpack_require__(137);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -915,7 +1315,7 @@ webpackJsonp([1],[
 	;
 
 /***/ }),
-/* 106 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -925,11 +1325,11 @@ webpackJsonp([1],[
 	});
 	exports.OptionsComponent = undefined;
 	
-	var _Options = __webpack_require__(105);
+	var _Options = __webpack_require__(109);
 	
 	var _Options2 = _interopRequireDefault(_Options);
 	
-	var _OptionsComponent = __webpack_require__(123);
+	var _OptionsComponent = __webpack_require__(129);
 	
 	var _OptionsComponent2 = _interopRequireDefault(_OptionsComponent);
 	
@@ -944,7 +1344,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 107 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -955,18 +1355,21 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(131);
+	__webpack_require__(138);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var ShoppingList = function () {
-	  function ShoppingList(teaService, $mdTheming) {
+	  function ShoppingList(teaService, $mdTheming, $animate, $timeout) {
 	    '$inject';
 	
 	    _classCallCheck(this, ShoppingList);
 	
 	    this.$mdTheming = $mdTheming;
 	    this.teaService = teaService;
+	    this.$animate = $animate;
+	    this.$timeout = $timeout;
+	    this.teaLoaded = false;
 	    this.filterOptions = this.teaService.getFilterOptions();
 	  }
 	
@@ -977,7 +1380,13 @@ webpackJsonp([1],[
 	
 	      this.teaService.getTea().then(function (data) {
 	        _this.allTea = data;
+	        _this.teaLoaded = true;
 	      });
+	    }
+	  }, {
+	    key: 'testView',
+	    value: function testView(inView) {
+	      console.log(inView);
 	    }
 	  }]);
 	
@@ -987,7 +1396,7 @@ webpackJsonp([1],[
 	exports.default = ShoppingList;
 
 /***/ }),
-/* 108 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -997,11 +1406,11 @@ webpackJsonp([1],[
 	});
 	exports.ShoppingListComponent = undefined;
 	
-	var _ShoppingListComponent = __webpack_require__(124);
+	var _ShoppingListComponent = __webpack_require__(130);
 	
 	var _ShoppingListComponent2 = _interopRequireDefault(_ShoppingListComponent);
 	
-	var _ShoppingList = __webpack_require__(107);
+	var _ShoppingList = __webpack_require__(111);
 	
 	var _ShoppingList2 = _interopRequireDefault(_ShoppingList);
 	
@@ -1016,7 +1425,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 109 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1027,7 +1436,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(132);
+	__webpack_require__(139);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1073,7 +1482,7 @@ webpackJsonp([1],[
 	exports.default = ShoppingListItem;
 
 /***/ }),
-/* 110 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1083,11 +1492,11 @@ webpackJsonp([1],[
 	});
 	exports.ShoppingListItemComponent = undefined;
 	
-	var _ShoppingListItemComponent = __webpack_require__(125);
+	var _ShoppingListItemComponent = __webpack_require__(131);
 	
 	var _ShoppingListItemComponent2 = _interopRequireDefault(_ShoppingListItemComponent);
 	
-	var _ShoppingListItem = __webpack_require__(109);
+	var _ShoppingListItem = __webpack_require__(113);
 	
 	var _ShoppingListItem2 = _interopRequireDefault(_ShoppingListItem);
 	
@@ -1102,7 +1511,75 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 111 */
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(140);
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var SplashComponent = function () {
+	  function SplashComponent($timeout) {
+	    '$inject';
+	
+	    _classCallCheck(this, SplashComponent);
+	
+	    this.$timeout = $timeout;
+	  }
+	
+	  _createClass(SplashComponent, [{
+	    key: '$onInit',
+	    value: function $onInit() {
+	      var _this = this;
+	
+	      this.show = false;
+	      this.$timeout(function () {
+	        _this.show = true;
+	      }, 200);
+	    }
+	  }]);
+	
+	  return SplashComponent;
+	}();
+	
+	exports.default = SplashComponent;
+
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.SplashComponent = undefined;
+	
+	var _SplashComponent = __webpack_require__(132);
+	
+	var _SplashComponent2 = _interopRequireDefault(_SplashComponent);
+	
+	var _Splash = __webpack_require__(115);
+	
+	var _Splash2 = _interopRequireDefault(_Splash);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var SplashComponent = exports.SplashComponent = {
+	  controller: _Splash2.default,
+	  template: _SplashComponent2.default
+	};
+
+/***/ }),
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1112,29 +1589,34 @@ webpackJsonp([1],[
 	});
 	exports.ComponentsModule = undefined;
 	
-	var _angular = __webpack_require__(16);
+	var _angular = __webpack_require__(12);
 	
 	var _angular2 = _interopRequireDefault(_angular);
 	
-	var _Nav = __webpack_require__(104);
+	__webpack_require__(16);
 	
-	var _ShoppingList = __webpack_require__(108);
+	var _Nav = __webpack_require__(108);
 	
-	var _ShoppingListItem = __webpack_require__(110);
+	var _ShoppingList = __webpack_require__(112);
 	
-	var _Options = __webpack_require__(106);
+	var _ShoppingListItem = __webpack_require__(114);
 	
-	var _Checkout = __webpack_require__(102);
+	var _Options = __webpack_require__(110);
 	
-	var _Cart = __webpack_require__(100);
+	var _Checkout = __webpack_require__(106);
+	
+	var _Cart = __webpack_require__(104);
+	
+	var _Splash = __webpack_require__(116);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var ComponentsModule = exports.ComponentsModule = _angular2.default.module('app.components', ['ngAnimate']).component('nav', _Nav.NavComponent).component('shoppingList', _ShoppingList.ShoppingListComponent).component('shoppingListItem', _ShoppingListItem.ShoppingListItemComponent).component('options', _Options.OptionsComponent).component('checkout', _Checkout.CheckoutComponent).component('cart', _Cart.CartComponent).component('splash', _Splash.SplashComponent).name;
+	
 	// import {HomeComponent} from './App';
-	var ComponentsModule = exports.ComponentsModule = _angular2.default.module('app.components', []).component('nav', _Nav.NavComponent).component('shoppingList', _ShoppingList.ShoppingListComponent).component('shoppingListItem', _ShoppingListItem.ShoppingListItemComponent).component('options', _Options.OptionsComponent).component('checkout', _Checkout.CheckoutComponent).component('cart', _Cart.CartComponent).name;
 
 /***/ }),
-/* 112 */
+/* 118 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1168,76 +1650,76 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 113 */
+/* 119 */
 /***/ (function(module, exports) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = CaffeineMeterDirective;
-	function CaffeineMeterDirective() {
-	  var _this = this;
-	
-	  return {
-	    restrict: 'E',
-	    template: '<div class="caffeine-scale">Rating: {{rating}}</div>',
-	    link: function link(scope, ele, attr) {
-	      var gaugeReading = void 0,
-	          gaugeElements = void 0,
-	          lastGaugeSectionIndex = void 0,
-	          selectedGaugeSection = void 0,
-	          selectedMeter = void 0;
-	      if (scope.caffeinemg < 80) {
-	        scope.rating = 'LOW';
-	      }
-	
-	      if (scope.caffeinemg < 180 && scope.caffeinemg > 80) {
-	        scope.rating = 'MEDIUM';
-	      }
-	
-	      if (scope.caffeinemg > 180) {
-	        scope.rating = 'HIGH';
-	      }
-	      gaugeReading = Math.floor(scope.caffeinemg / 1.6);
-	      gaugeElements = '<div id=' + scope.id + ' class=\'gauge\'>\n                            <div class=\'mask\'>\n                              <div class=\'semi-circle\'></div>\n                              <div class=\'semi-circle--mask\'></div>\n                            </div>                          </div>';
-	
-	      lastGaugeSectionIndex = $('.gauge-section').length - 1;
-	      selectedGaugeSection = $('.gauge-section')[lastGaugeSectionIndex];
-	      $(selectedGaugeSection).append(gaugeElements);
-	
-	      selectedMeter = $("#" + scope.id + " .semi-circle--mask");
-	
-	      selectedMeter.animate({
-	        textIndent: gaugeReading,
-	        step: function step(now, fx) {
-	          $(this).css({
-	            '-webkit-transform': 'rotate(' + now + 'deg)',
-	            '-moz-transform': 'rotate(' + now + 'deg)',
-	            '-ms-transform': 'rotate(' + now + 'deg)',
-	            'transform': 'rotate(' + now + 'deg)'
-	          });
-	        },
-	        duration: 1000
-	      });
-	      selectedMeter.animate({ textIndent: gaugeReading }, {
-	        step: function step(now, fx) {
-	          $(_this).css({
-	            '-webkit-transform': 'rotate(' + now + 'deg)',
-	            '-moz-transform': 'rotate(' + now + 'deg)',
-	            '-ms-transform': 'rotate(' + now + 'deg)',
-	            'transform': 'rotate(' + now + 'deg)'
-	          });
-	        },
-	        duration: 1000
-	      });
-	    }
-	  };
-	}
+	// export default function CaffeineMeterDirective() {
+	//   return {
+	//     restrict: 'E',
+	//     template: `<div class="caffeine-scale">Rating: {{rating}}</div>`,
+	//     link: (scope, ele, attr) => {
+	//       let gaugeReading,
+	//         gaugeElements,
+	//         lastGaugeSectionIndex,
+	//         selectedGaugeSection,
+	//         selectedMeter;
+	//       if (scope.caffeinemg < 80) {
+	//         scope.rating = 'LOW'
+	//       }
+	//
+	//       if (scope.caffeinemg < 180 && scope.caffeinemg > 80) {
+	//         scope.rating = 'MEDIUM'
+	//       }
+	//
+	//       if (scope.caffeinemg > 180) {
+	//         scope.rating = 'HIGH'
+	//       }
+	//       gaugeReading = Math.floor((scope.caffeinemg) / 1.6);
+	//       gaugeElements = `<div id=${scope.id} class='gauge'>
+	//                             <div class='mask'>
+	//                               <div class='semi-circle'></div>
+	//                               <div class='semi-circle--mask'></div>
+	//                             </div>\
+	//                           </div>`;
+	//
+	//       lastGaugeSectionIndex = $('.gauge-section').length - 1;
+	//       selectedGaugeSection = $('.gauge-section')[lastGaugeSectionIndex];
+	//       $(selectedGaugeSection).append(gaugeElements);
+	//
+	//       selectedMeter = $("#"+scope.id + " .semi-circle--mask");
+	//
+	//       selectedMeter.animate({
+	//         textIndent: gaugeReading,
+	//         step: function(now,fx){
+	//           $(this).css({
+	//             '-webkit-transform': `rotate(${now}deg)`,
+	//             '-moz-transform': `rotate(${now}deg)`,
+	//             '-ms-transform': `rotate(${now}deg)`,
+	//             'transform': `rotate(${now}deg)`
+	//           });
+	//         },
+	//         duration: 1000
+	//       });
+	//       selectedMeter.animate({ textIndent: gaugeReading },
+	//         {
+	//           step: (now,fx) => {
+	//             $(this).css({
+	//               '-webkit-transform': `rotate(${now}deg)`,
+	//               '-moz-transform': `rotate(${now}deg)`,
+	//               '-ms-transform': `rotate(${now}deg)`,
+	//               'transform': `rotate(${now}deg)`
+	//             });
+	//           },
+	//           duration: 1000
+	//         });
+	//
+	//     }
+	//   }
+	// }
+	"use strict";
 
 /***/ }),
-/* 114 */
+/* 120 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1257,7 +1739,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 115 */
+/* 121 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -1325,7 +1807,7 @@ webpackJsonp([1],[
 	;
 
 /***/ }),
-/* 116 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1336,7 +1818,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _teaData = __webpack_require__(118);
+	var _teaData = __webpack_require__(124);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1372,7 +1854,7 @@ webpackJsonp([1],[
 	exports.default = TeaService;
 
 /***/ }),
-/* 117 */
+/* 123 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1424,7 +1906,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 118 */
+/* 124 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1545,128 +2027,56 @@ webpackJsonp([1],[
 	}];
 
 /***/ }),
-/* 119 */
+/* 125 */
 /***/ (function(module, exports) {
 
 	module.exports = "<nav></nav>\n<ui-view></ui-view>\n";
 
 /***/ }),
-/* 120 */
+/* 126 */
 /***/ (function(module, exports) {
 
 	module.exports = "<md-table-container ng-if=\"$ctrl.cart.length\">\n  <table md-table md-row-select multiple>\n    <thead md-head md-order=\"\" md-on-reorder=\"\">\n      <tr md-row>\n        <th md-column>Product</th>\n        <th md-column>Quantity</th>\n        <th md-column>Sub-Total</th>\n      </tr>\n    </thead>\n    <tbody md-body>\n      <tr md-row ng-repeat=\"tea in $ctrl.cart track by $index\">\n        <td md-cell>\n          <p>{{tea.name}}</p>\n          <img ng-src={{tea.imageUrl}} alt=\"\">\n          <p>\n            <md-button class=\"md-raised md-accent\" ng-if=\"!$ctrl.editing\" ng-click=\"$ctrl.triggerEditMode()\">Edit Amount</md-button>\n            <div ng-if=\"$ctrl.editing\">\n              <md-input-container>\n                <label for=\"editTea\">Edit Quantity</label>\n                <md-select ng-model=\"tea.quantity\" ng-change=\"$ctrl.changeAmount(tea, $index)\" id=\"editTea\">\n                  <md-option ng-repeat=\"quantity in $ctrl.quantity\" ng-value=\"quantity\" aria-label=\"quantity\">{{quantity}}</md-option>\n                </md-select>\n                <md-button ng-click=\"$ctrl.changeTotal()\">Submit</md-button>\n              </md-input-container>\n            </div>\n            <md-button class=\"md-raised md-warn\" ng-click=\"$ctrl.deleteItem(tea)\">Delete</md-button>\n          </p>\n        </td>\n        <td md-cell>{{tea.quantity}}</td>\n        <td md-cell>{{tea.total/100 | currency}}</td>\n      </tr>\n    </tbody>\n  </table>\n</md-table-container>\n<section class=\"empty-cart\" ng-if=\"!$ctrl.cart.length\">\n  <h1 class=\"empty-cart-title\">Your cart is empty!</h1>\n  <div class=\"empty-cart-image\">\n    <img src=\"http://icons.veryicon.com/png/Business/Ecommerce/Empty%20shopping%20cart.png\" alt=\"empty cart\">\n  </div>\n  <md-button class=\"md-raised md-primary\" ui-sref=\"home\">Go Shopping!</md-button>\n</section>\n";
 
 /***/ }),
-/* 121 */
+/* 127 */
 /***/ (function(module, exports) {
 
 	module.exports = "<div class=\"checkout\" ng-if=\"$ctrl.cart.length\">\n  <h1>Your Cart</h1>\n  <h3>Grand Total: {{$ctrl.grandTotal/100 | currency}}</h3>\n</div>\n<cart cart=\"$ctrl.cart\"></cart>\n";
 
 /***/ }),
-/* 122 */
-/***/ (function(module, exports) {
-
-	module.exports = "<div layout=\"column\" layout-fill>\n  <md-toolbar>\n    <div class=\"md-toolbar-tools\" >\n      <img src=\"https://d30y9cdsu7xlg0.cloudfront.net/png/17932-200.png\" alt=\"\" class=\"tea-icon\">\n      <h2 md-truncate flex>Tea Shopping</h2>\n      <md-button ui-sref=\"home\" class=\"md-accent\">\n        Home\n      </md-button>\n    </div>\n  </md-toolbar>\n</div>\n";
-
-/***/ }),
-/* 123 */
-/***/ (function(module, exports) {
-
-	module.exports = "<section class=\"options-section\">\n  <h3 class=\"options-header\">Sort by what you like!</h3>\n  <div class=\"sort\" layout=\"row\">\n    <md-input-container flex>\n      <label for=\"sort\">Sort By Category:</label>\n      <md-select ng-model=\"$ctrl.filterOptions.sortBy\" id=\"sort\">\n        <md-option ng-repeat=\"option in $ctrl.options\" ng-value=\"option\" ng-click=\"$ctrl.setOptions()\">{{option}}</md-option>\n      </md-select>\n    </md-input-container>\n    <md-input-container flex>\n      <label for=\"search\">Search By Name:</label>\n      <input type=\"text\" id=\"search\" ng-model=\"filterOptions.search\" ng-keydown=\"$ctrl.setOptions()\">\n    </md-input-container>\n  </div>\n  <div class=\"options-buttons\">\n    <md-button class=\"md-raised\" aria-label=\"Clear Options\" ng-click=\"$ctrl.clearOptions()\">Clear Options</md-button>\n    <md-button class=\"md-raised\" aria-label=\"Checkout\" ui-sref=\"checkout\">\n      <span ng-if=\"$ctrl.totalItems\">Checkout | Bag: {{$ctrl.totalItems}}</span>\n      <span ng-if=\"!$ctrl.totalItems\">Checkout | Bag: Empty!</span>\n    </md-button>\n  </div>\n</section>\n";
-
-/***/ }),
-/* 124 */
-/***/ (function(module, exports) {
-
-	module.exports = "<div class=\"background-image\">\n  <img src=\"https://pre00.deviantart.net/dddb/th/pre/f/2013/003/3/9/tea_shop_wasserschloss_by_k_a_n_e-d5q2u5t.jpg\" alt=\"\" flex>\n  <div class=\"image-text\">\n    <h1 class=\"title\" md-colors=\"{color: 'primary'}\">Tea Shoppe</h1>\n    <h3 class=\"sub-title\" md-colors=\"{color: 'primary-100'}\">A fake tea shop for you to fake order some fake tea!</h3>\n  </div>\n</div>\n<options></options>\n<div layout=\"row\" layout-align=\"center center\" layout-wrap class=\"shopping-list\">\n  <div\n      ng-repeat=\"tea in $ctrl.allTea | filter: $ctrl.teaService.getFilterOptions().search | filter: $ctrl.teaService.getFilterOptions().sortBy\"\n      flex=\"25\"\n      layout-wrap\n  >\n    <shopping-list-item tea=\"tea\" options=\"options\"></shopping-list-item>\n  </div>\n</div>\n";
-
-/***/ }),
-/* 125 */
-/***/ (function(module, exports) {
-
-	module.exports = "<md-content layout=\"row\">\n    <md-card md-theme-watch layout-margin>\n      <md-card-title>\n        <md-card-title-text flex>\n          <span class=\"md-headline\">{{::$ctrl.tea.name}}</span>\n          <span class=\"md-subhead\">Price: {{::$ctrl.tea.price/100 | currency}}</span>\n          <span class=\"md-subhead\">Ingredients: {{::$ctrl.tea.ingredients}}</span>\n          <span class=\"md-subhead\">Rating: {{::$ctrl.tea.rating}}</span>\n          <span class=\"md-subhead\">In Stock? {{ ::$ctrl.tea.inStock | inStock }}</span>\n          <span class=\"md-subhead\">Categories: <span ng-repeat=\"cat in $ctrl.tea.categories\">{{cat}} </span></span>\n        </md-card-title-text>\n      </md-card-title>\n      <md-card-title-media layout=\"row\" layout-align=\"right\">\n        <img ng-src={{$ctrl.tea.imageUrl}} alt=\"\">\n      </md-card-title-media>\n      <md-card-actions layout=\"row\" layout-align=\"end center\">\n        <span>Quantity: </span>\n        <md-input-container>\n          <md-select ng-model=\"$ctrl.quantity\" aria-label=\"select\">\n            <md-option ng-repeat=\"item in $ctrl.totalQuantity\" ng-value=\"item\">{{::item}}</md-option>\n          </md-select>\n        </md-input-container>\n        <md-button ng-click=\"$ctrl.addToCart($ctrl.tea, $ctrl.quantity)\" ng-disabled=\"!$ctrl.quantity\">Add to cart</md-button>\n      </md-card-actions>\n    </md-card>\n</md-content>\n";
-
-/***/ }),
-/* 126 */,
-/* 127 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(33);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(true) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept(33, function() {
-				var newContent = __webpack_require__(33);
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ }),
 /* 128 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(34);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(true) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept(34, function() {
-				var newContent = __webpack_require__(34);
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	module.exports = "<div layout=\"column\" layout-fill>\n    <div class=\"md-toolbar-tools\">\n      <i class=\"fas fa-coffee tea-icon\" md-colors=\"{color: 'accent'}\"></i>\n      <h2 md-truncate flex class=\"title\" md-colors=\"{color: 'accent'}\">Tea Shopping</h2>\n      <md-button ui-sref=\"home\" class=\"md-accent\">\n        Home\n      </md-button>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 129 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(35);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(true) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept(35, function() {
-				var newContent = __webpack_require__(35);
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	module.exports = "<section class=\"options-section\">\n  <h3 class=\"options-header\">Sort your Tea</h3>\n  <div class=\"sort\" layout=\"row\">\n    <md-input-container flex>\n      <label for=\"sort\">Sort By Category:</label>\n      <md-select ng-model=\"$ctrl.filterOptions.sortBy\" id=\"sort\">\n        <md-option ng-repeat=\"option in $ctrl.options\" ng-value=\"option\" ng-click=\"$ctrl.setOptions()\">{{option}}</md-option>\n      </md-select>\n    </md-input-container>\n    <md-input-container flex>\n      <label for=\"search\">Search By Name:</label>\n      <input type=\"text\" id=\"search\" ng-model=\"filterOptions.search\" ng-keydown=\"$ctrl.setOptions()\">\n    </md-input-container>\n  </div>\n  <div class=\"options-buttons\">\n    <md-button class=\"md-raised\" aria-label=\"Clear Options\" ng-click=\"$ctrl.clearOptions()\">Clear Options</md-button>\n    <md-button class=\"md-raised\" aria-label=\"Checkout\" ui-sref=\"checkout\">\n      <span ng-if=\"$ctrl.totalItems\">Checkout | Bag: {{$ctrl.totalItems}}</span>\n      <span ng-if=\"!$ctrl.totalItems\">Checkout | Bag: Empty!</span>\n    </md-button>\n  </div>\n</section>\n";
 
 /***/ }),
 /* 130 */
+/***/ (function(module, exports) {
+
+	module.exports = "<splash></splash>\n<options></options>\n<div class=\"loader\" ng-if=\"!$ctrl.teaLoaded\" layout=\"row\" layout-align=\"center center\">\n  <md-progress-circular md-mode=\"intermediate\"></md-progress-circular>\n</div>\n<div layout=\"row\" layout-align=\"start start\" layout-wrap class=\"shopping-list md-padding\" in-view=\"$ctrl.testView($inview)\" ng-if=\"$ctrl.teaLoaded\">\n  <div\n      ng-repeat=\"tea in $ctrl.allTea | filter: $ctrl.teaService.getFilterOptions().search | filter: $ctrl.teaService.getFilterOptions().sortBy\"\n      flex=\"25\"\n      layout-wrap\n  >\n    <shopping-list-item tea=\"tea\" options=\"options\"></shopping-list-item>\n  </div>\n</div>\n";
+
+/***/ }),
+/* 131 */
+/***/ (function(module, exports) {
+
+	module.exports = "<md-content>\n    <md-card md-theme-watch layout-margin>\n      <md-card-title>\n        <md-card-title-text flex>\n          <span class=\"md-headline\">{{::$ctrl.tea.name}}</span>\n          <span class=\"md-subhead\">Price: {{::$ctrl.tea.price/100 | currency}}</span>\n          <span class=\"md-subhead\">Ingredients: {{::$ctrl.tea.ingredients}}</span>\n          <span class=\"md-subhead\">Rating: {{::$ctrl.tea.rating}}</span>\n          <span class=\"md-subhead\">In Stock? {{ ::$ctrl.tea.inStock | inStock }}</span>\n          <span class=\"md-subhead\">Categories: <span ng-repeat=\"cat in $ctrl.tea.categories\">{{cat}} </span></span>\n        </md-card-title-text>\n      </md-card-title>\n      <md-card-title-media layout=\"row\" layout-align=\"right\">\n        <img ng-src={{$ctrl.tea.imageUrl}} alt=\"\">\n      </md-card-title-media>\n      <md-card-actions layout=\"row\" layout-align=\"end center\">\n        <span>Quantity: </span>\n        <md-input-container>\n          <md-select ng-model=\"$ctrl.quantity\" aria-label=\"select\">\n            <md-option ng-repeat=\"item in $ctrl.totalQuantity\" ng-value=\"item\">{{::item}}</md-option>\n          </md-select>\n        </md-input-container>\n        <md-button ng-click=\"$ctrl.addToCart($ctrl.tea, $ctrl.quantity)\" ng-disabled=\"!$ctrl.quantity\">Add to cart</md-button>\n      </md-card-actions>\n    </md-card>\n</md-content>\n";
+
+/***/ }),
+/* 132 */
+/***/ (function(module, exports) {
+
+	module.exports = "<div class=\"background-image\">\n  <!--<img src=\"https://pre00.deviantart.net/dddb/th/pre/f/2013/003/3/9/tea_shop_wasserschloss_by_k_a_n_e-d5q2u5t.jpg\" alt=\"\" flex>-->\n  <div class=\"background\" flex md-colors=\"{color: 'primary'}\">\n    <img\n        ng-src=\"http://www.waykana.com/waykana/wp-content/uploads/2016/03/girl.png\"\n        alt=\"\"\n        flex\n        ng-if=\"$ctrl.show\"\n        class=\"title\"\n    >\n  </div>\n  <div class=\"image-text\">\n    <h1 class=\"title\" md-colors=\"{color: 'primary-100'}\" ng-if=\"$ctrl.show\">Tea Shoppe</h1>\n    <h3 class=\"title sub-title\" md-colors=\"{color: 'primary-100'}\" ng-if=\"$ctrl.show\">A fake tea shop for you to fake order some fake tea!</h3>\n  </div>\n</div>\n";
+
+/***/ }),
+/* 133 */,
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1692,7 +2102,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 131 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1718,7 +2128,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 132 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1744,7 +2154,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 133 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1770,7 +2180,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 134 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1796,7 +2206,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 135 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -1813,6 +2223,110 @@ webpackJsonp([1],[
 		if(!content.locals) {
 			module.hot.accept(41, function() {
 				var newContent = __webpack_require__(41);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 140 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(42);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(42, function() {
+				var newContent = __webpack_require__(42);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 141 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(43);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(43, function() {
+				var newContent = __webpack_require__(43);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 142 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(44);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(44, function() {
+				var newContent = __webpack_require__(44);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 143 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(45);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(45, function() {
+				var newContent = __webpack_require__(45);
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});

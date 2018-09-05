@@ -8,6 +8,7 @@ import { ShoppingListItemComponent } from './ShoppingListItem';
 import { OptionsComponent } from './Options';
 import { CheckoutComponent } from './Checkout';
 import { CartComponent } from './Cart';
+import { SplashComponent } from './Splash';
 
 export const ComponentsModule = angular.module('app.components', ['ngAnimate'])
   .component('nav', NavComponent)
@@ -16,4 +17,5 @@ export const ComponentsModule = angular.module('app.components', ['ngAnimate'])
   .component('options', OptionsComponent)
   .component('checkout', CheckoutComponent)
   .component('cart', CartComponent)
+  .component('splash', SplashComponent)
   .name;

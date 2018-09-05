@@ -7,16 +7,19 @@ export default class ShoppingList {
     this.teaService = teaService;
     this.$animate = $animate;
     this.$timeout = $timeout;
+    this.teaLoaded = false;
     this.filterOptions = this.teaService.getFilterOptions();
   }
 
   $onInit() {
-    this.teaService.getTea().then((data) => {
-      this.allTea = data;
-    });
-    this.show = false;
-    this.$timeout(() => {
-      this.show = true;
-    }, 200);
+    this.teaService.getTea()
+      .then((data) => {
+        this.allTea = data;
+        this.teaLoaded = true;
+      });
+  }
+
+  testView (inView) {
+    console.log(inView)
   }
 }

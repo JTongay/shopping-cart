@@ -1,12 +1,9 @@
-<div class="background-image">
-  <img src="https://pre00.deviantart.net/dddb/th/pre/f/2013/003/3/9/tea_shop_wasserschloss_by_k_a_n_e-d5q2u5t.jpg" alt="" flex>
-  <div class="image-text">
-    <h1 class="title" md-colors="{color: 'primary'}" ng-if="$ctrl.show">Tea Shoppe</h1>
-    <h3 class="title sub-title" md-colors="{color: 'primary-100'}" ng-if="$ctrl.show">A fake tea shop for you to fake order some fake tea!</h3>
-  </div>
-</div>
+<splash></splash>
 <options></options>
-<div layout="row" layout-align="center center" layout-wrap class="shopping-list">
+<div class="loader" ng-if="!$ctrl.teaLoaded" layout="row" layout-align="center center">
+  <md-progress-circular md-mode="intermediate"></md-progress-circular>
+</div>
+<div layout="row" layout-align="start start" layout-wrap class="shopping-list md-padding" in-view="$ctrl.testView($inview)" ng-if="$ctrl.teaLoaded">
   <div
       ng-repeat="tea in $ctrl.allTea | filter: $ctrl.teaService.getFilterOptions().search | filter: $ctrl.teaService.getFilterOptions().sortBy"
       flex="25"

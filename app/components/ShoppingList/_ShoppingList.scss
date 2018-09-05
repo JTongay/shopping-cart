@@ -1,33 +1,4 @@
 shopping-list {
-	.background-image {
-		img {
-			width: 100%;
-			object-fit: fill;
-			position: relative;
-			filter: contrast(25%);
-		}
-		.image-text {
-			position: absolute;
-			top: 140px;
-			left: 40px;
-			padding: 30px;
-			width: auto;
-			.title.ng-enter,
-			.title.ng-leave {
-				transition: all 1s ease-in;
-				position: relative;
-			}
-			.title.ng-enter {
-				opacity: 0;
-			}
-			.title.ng-enter-active{
-				opacity: 1;
-			}
-			.title.ng-leave {
-				opacity: 1;
-			}
 
-		}
-	}
 }
 

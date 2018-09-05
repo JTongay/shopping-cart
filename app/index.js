@@ -1,6 +1,7 @@
 // Angular & Router ES6 Imports
 import angular from 'angular';
 import angularUIRouter from 'angular-ui-router';
+import angularInview from 'angular-inview';
 import config from './config';
 import 'angular-animate';
 import 'angular-aria';
@@ -31,6 +32,7 @@ export const app = angular.module('app', [
     'ngMessages',
     'ngAria',
     'md.data.table',
+    angularInview,
     'ui.router',
     ComponentsModule
   ])

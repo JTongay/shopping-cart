@@ -1,5 +1,7 @@
 options {
 	.options-section {
+		box-sizing: border-box;
+		margin: 10px 40px;
 		padding: 40px;
 		.options-header {
 			text-align: center;

@@ -39,7 +39,7 @@ export const app = angular.module('app', [
   .config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('pink')
-      .accentPalette('orange');
+      .accentPalette('green');
   })
   .component('app', AppComponent)
   .config(config)
@@ -47,11 +47,3 @@ export const app = angular.module('app', [
   .service('cartService', CartService)
   .directive('caffeineScale', CaffeineMeterDirective)
   .filter('inStock', InStock);
-  // .run(($animate) => {
-  //   $animate.enabled(true);
-  // });
-
-// Router Configuration
-// Components must be declared first since
-// Routes reference controllers that will be bound to route templates.
-// appConfiguration(app);

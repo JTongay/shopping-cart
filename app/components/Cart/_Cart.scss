@@ -1,6 +1,11 @@
+.cart {
+	margin: 0 50px;
+}
+
 .empty-cart {
 	text-align: center;
-
+	position: relative;
+	padding-top: 80px;
 	.empty-cart-image {
 		margin: 0 auto;
 	}

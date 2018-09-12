@@ -1,3 +1,5 @@
+import './_Checkout.scss';
+
 export default class Checkout {
   constructor(
     cartService,

@@ -13,15 +13,15 @@ webpackJsonp([1],[
 	
 	var _angular2 = _interopRequireDefault(_angular);
 	
-	var _angularUiRouter = __webpack_require__(74);
+	var _angularUiRouter = __webpack_require__(75);
 	
 	var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 	
-	var _angularInview = __webpack_require__(77);
+	var _angularInview = __webpack_require__(78);
 	
 	var _angularInview2 = _interopRequireDefault(_angularInview);
 	
-	var _config = __webpack_require__(118);
+	var _config = __webpack_require__(119);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
@@ -31,39 +31,39 @@ webpackJsonp([1],[
 	
 	__webpack_require__(23);
 	
+	__webpack_require__(48);
+	
 	__webpack_require__(47);
 	
-	__webpack_require__(46);
+	__webpack_require__(144);
 	
-	__webpack_require__(142);
+	__webpack_require__(145);
 	
-	__webpack_require__(143);
+	var _components = __webpack_require__(118);
 	
-	var _components = __webpack_require__(117);
+	var _App = __webpack_require__(103);
 	
-	var _App = __webpack_require__(102);
-	
-	var _Tea = __webpack_require__(122);
+	var _Tea = __webpack_require__(123);
 	
 	var _Tea2 = _interopRequireDefault(_Tea);
 	
-	var _Cart = __webpack_require__(121);
+	var _Cart = __webpack_require__(122);
 	
 	var _Cart2 = _interopRequireDefault(_Cart);
 	
-	var _inStock = __webpack_require__(120);
+	var _inStock = __webpack_require__(121);
 	
 	var _inStock2 = _interopRequireDefault(_inStock);
 	
-	var _CaffeineMeter = __webpack_require__(119);
+	var _CaffeineMeter = __webpack_require__(120);
 	
 	var _CaffeineMeter2 = _interopRequireDefault(_CaffeineMeter);
 	
-	var _theme = __webpack_require__(123);
+	var _theme = __webpack_require__(124);
 	
 	var _theme2 = _interopRequireDefault(_theme);
 	
-	__webpack_require__(141);
+	__webpack_require__(143);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -75,16 +75,8 @@ webpackJsonp([1],[
 	// Single Style Entry Point
 	// Angular & Router ES6 Imports
 	var app = exports.app = _angular2.default.module('app', ['ngMaterial', 'ngAnimate', 'ngMessages', 'ngAria', 'md.data.table', _angularInview2.default, 'ui.router', _components.ComponentsModule]).config(function ($mdThemingProvider) {
-	  $mdThemingProvider.theme('default').primaryPalette('pink').accentPalette('orange');
+	  $mdThemingProvider.theme('default').primaryPalette('pink').accentPalette('green');
 	}).component('app', _App.AppComponent).config(_config2.default).service('teaService', _Tea2.default).service('cartService', _Cart2.default).directive('caffeineScale', _CaffeineMeter2.default).filter('inStock', _inStock2.default);
-	// .run(($animate) => {
-	//   $animate.enabled(true);
-	// });
-	
-	// Router Configuration
-	// Components must be declared first since
-	// Routes reference controllers that will be bound to route templates.
-	// appConfiguration(app);
 
 /***/ }),
 /* 1 */,
@@ -92,8 +84,7 @@ webpackJsonp([1],[
 /* 3 */,
 /* 4 */,
 /* 5 */,
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
 
 	/*
@@ -149,7 +140,7 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -374,6 +365,7 @@ webpackJsonp([1],[
 
 
 /***/ }),
+/* 8 */,
 /* 9 */,
 /* 10 */,
 /* 11 */,
@@ -404,7 +396,7 @@ webpackJsonp([1],[
 /* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	
 	
@@ -418,12 +410,12 @@ webpackJsonp([1],[
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, ".empty-cart {\n  text-align: center; }\n  .empty-cart .empty-cart-image {\n    margin: 0 auto; }\n", ""]);
+	exports.push([module.id, ".cart {\n  margin: 0 50px; }\n\n.empty-cart {\n  text-align: center;\n  position: relative;\n  padding-top: 80px; }\n  .empty-cart .empty-cart-image {\n    margin: 0 auto; }\n", ""]);
 	
 	// exports
 
@@ -432,7 +424,21 @@ webpackJsonp([1],[
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".checkout {\n  position: relative;\n  padding-top: 80px;\n  margin: 0 50px; }\n", ""]);
+	
+	// exports
+
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	
 	
@@ -443,24 +449,24 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "options .options-section {\n  padding: 40px; }\n  options .options-section .options-header {\n    text-align: center; }\n  options .options-section .sort {\n    margin: 0 30px; }\n  options .options-section .options-buttons {\n    text-align: center;\n    margin: 20px 0; }\n", ""]);
+	exports.push([module.id, "options .options-section {\n  box-sizing: border-box;\n  margin: 10px 40px;\n  padding: 40px; }\n  options .options-section .options-header {\n    text-align: center; }\n  options .options-section .sort {\n    margin: 0 30px; }\n  options .options-section .options-buttons {\n    text-align: center;\n    margin: 20px 0; }\n", ""]);
 	
 	// exports
 
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	
 	
@@ -471,26 +477,26 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 41 */
-40,
 /* 42 */
+41,
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "splash .background-image .background {\n  width: 100%;\n  height: 600px;\n  background-color: #f02261;\n  position: relative; }\n  splash .background-image .background img {\n    height: inherit;\n    float: right;\n    padding-right: 25px; }\n  splash .background-image .background img.ng-enter,\n  splash .background-image .background img.ng-leave {\n    transition: all 2s ease-in; }\n  splash .background-image .background img.ng-enter {\n    opacity: 0; }\n  splash .background-image .background img.ng-enter-active {\n    opacity: 0.5; }\n  splash .background-image .background img.ng-leave {\n    opacity: 0.75; }\n\nsplash .background-image .image-text {\n  position: absolute;\n  top: 140px;\n  left: 40px;\n  padding: 30px;\n  width: 50%; }\n  splash .background-image .image-text .title.ng-enter,\n  splash .background-image .image-text .title.ng-leave {\n    transition: all 1s ease-in;\n    position: relative; }\n  splash .background-image .image-text .title.ng-enter {\n    opacity: 0; }\n  splash .background-image .image-text .title.ng-enter-active {\n    opacity: 1; }\n  splash .background-image .image-text .title.ng-leave {\n    opacity: 1; }\n", ""]);
+	exports.push([module.id, "splash .background-image .background {\n  width: 100%;\n  height: 600px;\n  background-color: #f02261;\n  position: relative; }\n  splash .background-image .background img {\n    height: inherit;\n    float: right;\n    padding-right: 25px; }\n  splash .background-image .background img.ng-enter,\n  splash .background-image .background img.ng-leave {\n    transition: all 2s ease-in; }\n  splash .background-image .background img.ng-enter {\n    opacity: 0; }\n  splash .background-image .background img.ng-enter-active {\n    opacity: 0.7; }\n  splash .background-image .background img.ng-leave {\n    opacity: 1; }\n\nsplash .background-image .image-text {\n  position: absolute;\n  top: 140px;\n  left: 40px;\n  padding: 30px;\n  width: 50%; }\n  splash .background-image .image-text .title.ng-enter,\n  splash .background-image .image-text .title.ng-leave {\n    transition: all 1s ease-in;\n    position: relative; }\n  splash .background-image .image-text .title.ng-enter {\n    opacity: 0; }\n  splash .background-image .image-text .title.ng-enter-active {\n    opacity: 1; }\n  splash .background-image .image-text .title.ng-leave {\n    opacity: 1; }\n", ""]);
 	
 	// exports
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 	
@@ -501,10 +507,10 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	
 	
@@ -515,10 +521,10 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 	
 	
@@ -529,7 +535,6 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 46 */,
 /* 47 */,
 /* 48 */,
 /* 49 */,
@@ -560,7 +565,8 @@ webpackJsonp([1],[
 /* 74 */,
 /* 75 */,
 /* 76 */,
-/* 77 */
+/* 77 */,
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// # Angular-Inview
@@ -949,7 +955,6 @@ webpackJsonp([1],[
 
 
 /***/ }),
-/* 78 */,
 /* 79 */,
 /* 80 */,
 /* 81 */,
@@ -972,7 +977,8 @@ webpackJsonp([1],[
 /* 98 */,
 /* 99 */,
 /* 100 */,
-/* 101 */
+/* 101 */,
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -984,7 +990,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(134);
+	__webpack_require__(135);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1006,7 +1012,7 @@ webpackJsonp([1],[
 	}();
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1016,11 +1022,11 @@ webpackJsonp([1],[
 	});
 	exports.AppComponent = undefined;
 	
-	var _AppComponent = __webpack_require__(125);
+	var _AppComponent = __webpack_require__(126);
 	
 	var _AppComponent2 = _interopRequireDefault(_AppComponent);
 	
-	var _App = __webpack_require__(101);
+	var _App = __webpack_require__(102);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1030,7 +1036,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1041,7 +1047,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(135);
+	__webpack_require__(136);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1089,7 +1095,7 @@ webpackJsonp([1],[
 	exports.default = Cart;
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1099,11 +1105,11 @@ webpackJsonp([1],[
 	});
 	exports.CartComponent = undefined;
 	
-	var _Cart = __webpack_require__(103);
+	var _Cart = __webpack_require__(104);
 	
 	var _Cart2 = _interopRequireDefault(_Cart);
 	
-	var _CartComponent = __webpack_require__(126);
+	var _CartComponent = __webpack_require__(127);
 	
 	var _CartComponent2 = _interopRequireDefault(_CartComponent);
 	
@@ -1118,8 +1124,8 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 105 */
-/***/ (function(module, exports) {
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
@@ -1128,6 +1134,8 @@ webpackJsonp([1],[
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(137);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1163,7 +1171,7 @@ webpackJsonp([1],[
 	exports.default = Checkout;
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1173,11 +1181,11 @@ webpackJsonp([1],[
 	});
 	exports.CheckoutComponent = undefined;
 	
-	var _Checkout = __webpack_require__(105);
+	var _Checkout = __webpack_require__(106);
 	
 	var _Checkout2 = _interopRequireDefault(_Checkout);
 	
-	var _CheckoutComponent = __webpack_require__(127);
+	var _CheckoutComponent = __webpack_require__(128);
 	
 	var _CheckoutComponent2 = _interopRequireDefault(_CheckoutComponent);
 	
@@ -1192,7 +1200,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1201,7 +1209,7 @@ webpackJsonp([1],[
 	  value: true
 	});
 	
-	__webpack_require__(136);
+	__webpack_require__(138);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1212,7 +1220,7 @@ webpackJsonp([1],[
 	exports.default = Nav;
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1222,11 +1230,11 @@ webpackJsonp([1],[
 	});
 	exports.NavComponent = undefined;
 	
-	var _Nav = __webpack_require__(107);
+	var _Nav = __webpack_require__(108);
 	
 	var _Nav2 = _interopRequireDefault(_Nav);
 	
-	var _NavComponent = __webpack_require__(128);
+	var _NavComponent = __webpack_require__(129);
 	
 	var _NavComponent2 = _interopRequireDefault(_NavComponent);
 	
@@ -1238,7 +1246,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1249,7 +1257,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(137);
+	__webpack_require__(139);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1315,7 +1323,7 @@ webpackJsonp([1],[
 	;
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1325,11 +1333,11 @@ webpackJsonp([1],[
 	});
 	exports.OptionsComponent = undefined;
 	
-	var _Options = __webpack_require__(109);
+	var _Options = __webpack_require__(110);
 	
 	var _Options2 = _interopRequireDefault(_Options);
 	
-	var _OptionsComponent = __webpack_require__(129);
+	var _OptionsComponent = __webpack_require__(130);
 	
 	var _OptionsComponent2 = _interopRequireDefault(_OptionsComponent);
 	
@@ -1344,7 +1352,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1355,7 +1363,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(138);
+	__webpack_require__(140);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1396,7 +1404,7 @@ webpackJsonp([1],[
 	exports.default = ShoppingList;
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1406,11 +1414,11 @@ webpackJsonp([1],[
 	});
 	exports.ShoppingListComponent = undefined;
 	
-	var _ShoppingListComponent = __webpack_require__(130);
+	var _ShoppingListComponent = __webpack_require__(131);
 	
 	var _ShoppingListComponent2 = _interopRequireDefault(_ShoppingListComponent);
 	
-	var _ShoppingList = __webpack_require__(111);
+	var _ShoppingList = __webpack_require__(112);
 	
 	var _ShoppingList2 = _interopRequireDefault(_ShoppingList);
 	
@@ -1425,7 +1433,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1436,7 +1444,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(139);
+	__webpack_require__(141);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1482,7 +1490,7 @@ webpackJsonp([1],[
 	exports.default = ShoppingListItem;
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1492,11 +1500,11 @@ webpackJsonp([1],[
 	});
 	exports.ShoppingListItemComponent = undefined;
 	
-	var _ShoppingListItemComponent = __webpack_require__(131);
+	var _ShoppingListItemComponent = __webpack_require__(132);
 	
 	var _ShoppingListItemComponent2 = _interopRequireDefault(_ShoppingListItemComponent);
 	
-	var _ShoppingListItem = __webpack_require__(113);
+	var _ShoppingListItem = __webpack_require__(114);
 	
 	var _ShoppingListItem2 = _interopRequireDefault(_ShoppingListItem);
 	
@@ -1511,7 +1519,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1522,7 +1530,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	__webpack_require__(140);
+	__webpack_require__(142);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1553,7 +1561,7 @@ webpackJsonp([1],[
 	exports.default = SplashComponent;
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1563,11 +1571,11 @@ webpackJsonp([1],[
 	});
 	exports.SplashComponent = undefined;
 	
-	var _SplashComponent = __webpack_require__(132);
+	var _SplashComponent = __webpack_require__(133);
 	
 	var _SplashComponent2 = _interopRequireDefault(_SplashComponent);
 	
-	var _Splash = __webpack_require__(115);
+	var _Splash = __webpack_require__(116);
 	
 	var _Splash2 = _interopRequireDefault(_Splash);
 	
@@ -1579,7 +1587,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1595,19 +1603,19 @@ webpackJsonp([1],[
 	
 	__webpack_require__(16);
 	
-	var _Nav = __webpack_require__(108);
+	var _Nav = __webpack_require__(109);
 	
-	var _ShoppingList = __webpack_require__(112);
+	var _ShoppingList = __webpack_require__(113);
 	
-	var _ShoppingListItem = __webpack_require__(114);
+	var _ShoppingListItem = __webpack_require__(115);
 	
-	var _Options = __webpack_require__(110);
+	var _Options = __webpack_require__(111);
 	
-	var _Checkout = __webpack_require__(106);
+	var _Checkout = __webpack_require__(107);
 	
-	var _Cart = __webpack_require__(104);
+	var _Cart = __webpack_require__(105);
 	
-	var _Splash = __webpack_require__(116);
+	var _Splash = __webpack_require__(117);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -1616,7 +1624,7 @@ webpackJsonp([1],[
 	// import {HomeComponent} from './App';
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1650,7 +1658,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports) {
 
 	// export default function CaffeineMeterDirective() {
@@ -1719,7 +1727,7 @@ webpackJsonp([1],[
 	"use strict";
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1739,7 +1747,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -1807,7 +1815,7 @@ webpackJsonp([1],[
 	;
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1818,7 +1826,7 @@ webpackJsonp([1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _teaData = __webpack_require__(124);
+	var _teaData = __webpack_require__(125);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -1854,7 +1862,7 @@ webpackJsonp([1],[
 	exports.default = TeaService;
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -1906,7 +1914,7 @@ webpackJsonp([1],[
 	};
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -2027,56 +2035,56 @@ webpackJsonp([1],[
 	}];
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports) {
 
 	module.exports = "<nav></nav>\n<ui-view></ui-view>\n";
 
 /***/ }),
-/* 126 */
-/***/ (function(module, exports) {
-
-	module.exports = "<md-table-container ng-if=\"$ctrl.cart.length\">\n  <table md-table md-row-select multiple>\n    <thead md-head md-order=\"\" md-on-reorder=\"\">\n      <tr md-row>\n        <th md-column>Product</th>\n        <th md-column>Quantity</th>\n        <th md-column>Sub-Total</th>\n      </tr>\n    </thead>\n    <tbody md-body>\n      <tr md-row ng-repeat=\"tea in $ctrl.cart track by $index\">\n        <td md-cell>\n          <p>{{tea.name}}</p>\n          <img ng-src={{tea.imageUrl}} alt=\"\">\n          <p>\n            <md-button class=\"md-raised md-accent\" ng-if=\"!$ctrl.editing\" ng-click=\"$ctrl.triggerEditMode()\">Edit Amount</md-button>\n            <div ng-if=\"$ctrl.editing\">\n              <md-input-container>\n                <label for=\"editTea\">Edit Quantity</label>\n                <md-select ng-model=\"tea.quantity\" ng-change=\"$ctrl.changeAmount(tea, $index)\" id=\"editTea\">\n                  <md-option ng-repeat=\"quantity in $ctrl.quantity\" ng-value=\"quantity\" aria-label=\"quantity\">{{quantity}}</md-option>\n                </md-select>\n                <md-button ng-click=\"$ctrl.changeTotal()\">Submit</md-button>\n              </md-input-container>\n            </div>\n            <md-button class=\"md-raised md-warn\" ng-click=\"$ctrl.deleteItem(tea)\">Delete</md-button>\n          </p>\n        </td>\n        <td md-cell>{{tea.quantity}}</td>\n        <td md-cell>{{tea.total/100 | currency}}</td>\n      </tr>\n    </tbody>\n  </table>\n</md-table-container>\n<section class=\"empty-cart\" ng-if=\"!$ctrl.cart.length\">\n  <h1 class=\"empty-cart-title\">Your cart is empty!</h1>\n  <div class=\"empty-cart-image\">\n    <img src=\"http://icons.veryicon.com/png/Business/Ecommerce/Empty%20shopping%20cart.png\" alt=\"empty cart\">\n  </div>\n  <md-button class=\"md-raised md-primary\" ui-sref=\"home\">Go Shopping!</md-button>\n</section>\n";
-
-/***/ }),
 /* 127 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"checkout\" ng-if=\"$ctrl.cart.length\">\n  <h1>Your Cart</h1>\n  <h3>Grand Total: {{$ctrl.grandTotal/100 | currency}}</h3>\n</div>\n<cart cart=\"$ctrl.cart\"></cart>\n";
+	module.exports = "<md-table-container ng-if=\"$ctrl.cart.length\" class=\"cart\">\n  <table md-table md-row-select multiple>\n    <thead md-head md-order=\"\" md-on-reorder=\"\">\n      <tr md-row>\n        <th md-column>Product</th>\n        <th md-column>Quantity</th>\n        <th md-column>Sub-Total</th>\n      </tr>\n    </thead>\n    <tbody md-body>\n      <tr md-row ng-repeat=\"tea in $ctrl.cart track by $index\">\n        <td md-cell>\n          <p>{{tea.name}}</p>\n          <img ng-src={{tea.imageUrl}} alt=\"\">\n          <p>\n            <md-button class=\"md-raised md-accent\" ng-if=\"!$ctrl.editing\" ng-click=\"$ctrl.triggerEditMode()\">Edit Amount</md-button>\n            <div ng-if=\"$ctrl.editing\">\n              <md-input-container>\n                <label for=\"editTea\">Edit Quantity</label>\n                <md-select ng-model=\"tea.quantity\" ng-change=\"$ctrl.changeAmount(tea, $index)\" id=\"editTea\">\n                  <md-option ng-repeat=\"quantity in $ctrl.quantity\" ng-value=\"quantity\" aria-label=\"quantity\">{{quantity}}</md-option>\n                </md-select>\n                <md-button ng-click=\"$ctrl.changeTotal()\">Submit</md-button>\n              </md-input-container>\n            </div>\n            <md-button class=\"md-raised md-warn\" ng-click=\"$ctrl.deleteItem(tea)\">Delete</md-button>\n          </p>\n        </td>\n        <td md-cell>{{tea.quantity}}</td>\n        <td md-cell>{{tea.total/100 | currency}}</td>\n      </tr>\n    </tbody>\n  </table>\n</md-table-container>\n<section class=\"empty-cart\" ng-if=\"!$ctrl.cart.length\">\n  <h1 class=\"empty-cart-title\">Your cart is empty!</h1>\n  <div class=\"empty-cart-image\">\n    <img src=\"http://icons.veryicon.com/png/Business/Ecommerce/Empty%20shopping%20cart.png\" alt=\"empty cart\">\n  </div>\n  <md-button class=\"md-raised md-primary\" ui-sref=\"home\">Go Shopping!</md-button>\n</section>\n";
 
 /***/ }),
 /* 128 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div layout=\"column\" layout-fill>\n    <div class=\"md-toolbar-tools\">\n      <i class=\"fas fa-coffee tea-icon\" md-colors=\"{color: 'accent'}\"></i>\n      <h2 md-truncate flex class=\"title\" md-colors=\"{color: 'accent'}\">Tea Shopping</h2>\n      <md-button ui-sref=\"home\" class=\"md-accent\">\n        Home\n      </md-button>\n    </div>\n</div>\n";
+	module.exports = "<div class=\"checkout\" ng-if=\"$ctrl.cart.length\">\n  <h1>Your Cart</h1>\n  <h3>Grand Total: {{$ctrl.grandTotal/100 | currency}}</h3>\n</div>\n<cart cart=\"$ctrl.cart\"></cart>\n";
 
 /***/ }),
 /* 129 */
 /***/ (function(module, exports) {
 
-	module.exports = "<section class=\"options-section\">\n  <h3 class=\"options-header\">Sort your Tea</h3>\n  <div class=\"sort\" layout=\"row\">\n    <md-input-container flex>\n      <label for=\"sort\">Sort By Category:</label>\n      <md-select ng-model=\"$ctrl.filterOptions.sortBy\" id=\"sort\">\n        <md-option ng-repeat=\"option in $ctrl.options\" ng-value=\"option\" ng-click=\"$ctrl.setOptions()\">{{option}}</md-option>\n      </md-select>\n    </md-input-container>\n    <md-input-container flex>\n      <label for=\"search\">Search By Name:</label>\n      <input type=\"text\" id=\"search\" ng-model=\"filterOptions.search\" ng-keydown=\"$ctrl.setOptions()\">\n    </md-input-container>\n  </div>\n  <div class=\"options-buttons\">\n    <md-button class=\"md-raised\" aria-label=\"Clear Options\" ng-click=\"$ctrl.clearOptions()\">Clear Options</md-button>\n    <md-button class=\"md-raised\" aria-label=\"Checkout\" ui-sref=\"checkout\">\n      <span ng-if=\"$ctrl.totalItems\">Checkout | Bag: {{$ctrl.totalItems}}</span>\n      <span ng-if=\"!$ctrl.totalItems\">Checkout | Bag: Empty!</span>\n    </md-button>\n  </div>\n</section>\n";
+	module.exports = "<div layout=\"column\" layout-fill>\n    <div class=\"md-toolbar-tools\">\n      <i class=\"fas fa-coffee tea-icon\" md-colors=\"{color: 'accent-100'}\"></i>\n      <h2 md-truncate flex class=\"title\" md-colors=\"{color: 'accent-100'}\">Tea Shopping</h2>\n      <md-button ui-sref=\"home\" class=\"md-accent\">\n        Home\n      </md-button>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 130 */
 /***/ (function(module, exports) {
 
-	module.exports = "<splash></splash>\n<options></options>\n<div class=\"loader\" ng-if=\"!$ctrl.teaLoaded\" layout=\"row\" layout-align=\"center center\">\n  <md-progress-circular md-mode=\"intermediate\"></md-progress-circular>\n</div>\n<div layout=\"row\" layout-align=\"start start\" layout-wrap class=\"shopping-list md-padding\" in-view=\"$ctrl.testView($inview)\" ng-if=\"$ctrl.teaLoaded\">\n  <div\n      ng-repeat=\"tea in $ctrl.allTea | filter: $ctrl.teaService.getFilterOptions().search | filter: $ctrl.teaService.getFilterOptions().sortBy\"\n      flex=\"25\"\n      layout-wrap\n  >\n    <shopping-list-item tea=\"tea\" options=\"options\"></shopping-list-item>\n  </div>\n</div>\n";
+	module.exports = "<section class=\"options-section\">\n  <h3 class=\"options-header\">Sort your Tea</h3>\n  <div class=\"sort\" layout=\"row\">\n    <md-input-container flex>\n      <label for=\"sort\">Sort By Category:</label>\n      <md-select ng-model=\"$ctrl.filterOptions.sortBy\" id=\"sort\">\n        <md-option ng-repeat=\"option in $ctrl.options\" ng-value=\"option\" ng-click=\"$ctrl.setOptions()\">{{option}}</md-option>\n      </md-select>\n    </md-input-container>\n    <md-input-container flex>\n      <label for=\"search\">Search By Name:</label>\n      <input type=\"text\" id=\"search\" ng-model=\"filterOptions.search\" ng-keydown=\"$ctrl.setOptions()\">\n    </md-input-container>\n  </div>\n  <div class=\"options-buttons\">\n    <md-button class=\"md-raised\" aria-label=\"Clear Options\" ng-click=\"$ctrl.clearOptions()\">Clear Options</md-button>\n    <md-button class=\"md-raised\" aria-label=\"Checkout\" ui-sref=\"checkout\">\n      <span ng-if=\"$ctrl.totalItems\">Checkout | Bag: {{$ctrl.totalItems}}</span>\n      <span ng-if=\"!$ctrl.totalItems\">Checkout | Bag: Empty!</span>\n    </md-button>\n  </div>\n</section>\n";
 
 /***/ }),
 /* 131 */
 /***/ (function(module, exports) {
 
-	module.exports = "<md-content>\n    <md-card md-theme-watch layout-margin>\n      <md-card-title>\n        <md-card-title-text flex>\n          <span class=\"md-headline\">{{::$ctrl.tea.name}}</span>\n          <span class=\"md-subhead\">Price: {{::$ctrl.tea.price/100 | currency}}</span>\n          <span class=\"md-subhead\">Ingredients: {{::$ctrl.tea.ingredients}}</span>\n          <span class=\"md-subhead\">Rating: {{::$ctrl.tea.rating}}</span>\n          <span class=\"md-subhead\">In Stock? {{ ::$ctrl.tea.inStock | inStock }}</span>\n          <span class=\"md-subhead\">Categories: <span ng-repeat=\"cat in $ctrl.tea.categories\">{{cat}} </span></span>\n        </md-card-title-text>\n      </md-card-title>\n      <md-card-title-media layout=\"row\" layout-align=\"right\">\n        <img ng-src={{$ctrl.tea.imageUrl}} alt=\"\">\n      </md-card-title-media>\n      <md-card-actions layout=\"row\" layout-align=\"end center\">\n        <span>Quantity: </span>\n        <md-input-container>\n          <md-select ng-model=\"$ctrl.quantity\" aria-label=\"select\">\n            <md-option ng-repeat=\"item in $ctrl.totalQuantity\" ng-value=\"item\">{{::item}}</md-option>\n          </md-select>\n        </md-input-container>\n        <md-button ng-click=\"$ctrl.addToCart($ctrl.tea, $ctrl.quantity)\" ng-disabled=\"!$ctrl.quantity\">Add to cart</md-button>\n      </md-card-actions>\n    </md-card>\n</md-content>\n";
+	module.exports = "<splash></splash>\n<options></options>\n<div class=\"loader\" ng-if=\"!$ctrl.teaLoaded\" layout=\"row\" layout-align=\"center center\">\n  <md-progress-circular md-mode=\"intermediate\"></md-progress-circular>\n</div>\n<div layout=\"row\" layout-align=\"start start\" layout-wrap class=\"shopping-list md-padding\" in-view=\"$ctrl.testView($inview)\" ng-if=\"$ctrl.teaLoaded\">\n  <div\n      ng-repeat=\"tea in $ctrl.allTea | filter: $ctrl.teaService.getFilterOptions().search | filter: $ctrl.teaService.getFilterOptions().sortBy\"\n      flex=\"25\"\n      layout-wrap\n  >\n    <shopping-list-item tea=\"tea\" options=\"options\"></shopping-list-item>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 132 */
 /***/ (function(module, exports) {
 
+	module.exports = "<md-content>\n    <md-card md-theme-watch layout-margin>\n      <md-card-title>\n        <md-card-title-text flex>\n          <span class=\"md-headline\">{{::$ctrl.tea.name}}</span>\n          <span class=\"md-subhead\">Price: {{::$ctrl.tea.price/100 | currency}}</span>\n          <span class=\"md-subhead\">Ingredients: {{::$ctrl.tea.ingredients}}</span>\n          <span class=\"md-subhead\">Rating: {{::$ctrl.tea.rating}}</span>\n          <span class=\"md-subhead\">In Stock? {{ ::$ctrl.tea.inStock | inStock }}</span>\n          <span class=\"md-subhead\">Categories: <span ng-repeat=\"cat in $ctrl.tea.categories\">{{cat}} </span></span>\n        </md-card-title-text>\n      </md-card-title>\n      <md-card-title-media layout=\"row\" layout-align=\"right\">\n        <img ng-src={{$ctrl.tea.imageUrl}} alt=\"\">\n      </md-card-title-media>\n      <md-card-actions layout=\"row\" layout-align=\"end center\">\n        <span>Quantity: </span>\n        <md-input-container>\n          <md-select ng-model=\"$ctrl.quantity\" aria-label=\"select\">\n            <md-option ng-repeat=\"item in $ctrl.totalQuantity\" ng-value=\"item\">{{::item}}</md-option>\n          </md-select>\n        </md-input-container>\n        <md-button ng-click=\"$ctrl.addToCart($ctrl.tea, $ctrl.quantity)\" ng-disabled=\"!$ctrl.quantity\">Add to cart</md-button>\n      </md-card-actions>\n    </md-card>\n</md-content>\n";
+
+/***/ }),
+/* 133 */
+/***/ (function(module, exports) {
+
 	module.exports = "<div class=\"background-image\">\n  <!--<img src=\"https://pre00.deviantart.net/dddb/th/pre/f/2013/003/3/9/tea_shop_wasserschloss_by_k_a_n_e-d5q2u5t.jpg\" alt=\"\" flex>-->\n  <div class=\"background\" flex md-colors=\"{color: 'primary'}\">\n    <img\n        ng-src=\"http://www.waykana.com/waykana/wp-content/uploads/2016/03/girl.png\"\n        alt=\"\"\n        flex\n        ng-if=\"$ctrl.show\"\n        class=\"title\"\n    >\n  </div>\n  <div class=\"image-text\">\n    <h1 class=\"title\" md-colors=\"{color: 'primary-100'}\" ng-if=\"$ctrl.show\">Tea Shoppe</h1>\n    <h3 class=\"title sub-title\" md-colors=\"{color: 'primary-100'}\" ng-if=\"$ctrl.show\">A fake tea shop for you to fake order some fake tea!</h3>\n  </div>\n</div>\n";
 
 /***/ }),
-/* 133 */,
-/* 134 */
+/* 134 */,
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2085,7 +2093,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(36);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2102,7 +2110,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2111,7 +2119,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(37);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2128,7 +2136,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2137,7 +2145,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(38);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2154,7 +2162,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2163,7 +2171,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(39);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2180,7 +2188,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2189,7 +2197,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(40);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2206,7 +2214,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2215,7 +2223,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(41);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2232,7 +2240,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2241,7 +2249,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(42);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2258,7 +2266,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2267,7 +2275,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(43);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2284,7 +2292,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2293,7 +2301,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(44);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2310,7 +2318,7 @@ webpackJsonp([1],[
 	}
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -2319,7 +2327,7 @@ webpackJsonp([1],[
 	var content = __webpack_require__(45);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
+	var update = __webpack_require__(7)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
@@ -2327,6 +2335,32 @@ webpackJsonp([1],[
 		if(!content.locals) {
 			module.hot.accept(45, function() {
 				var newContent = __webpack_require__(45);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ }),
+/* 145 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(46);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(7)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(46, function() {
+				var newContent = __webpack_require__(46);
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});

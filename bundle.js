@@ -415,7 +415,7 @@ webpackJsonp([1],[
 	
 	
 	// module
-	exports.push([module.id, ".cart {\n  margin: 0 50px; }\n\n.empty-cart {\n  text-align: center;\n  position: relative;\n  padding-top: 80px; }\n  .empty-cart .empty-cart-image {\n    margin: 0 auto; }\n", ""]);
+	exports.push([module.id, ".cart {\n  margin: 0 140px; }\n  .cart .cart-item {\n    font-weight: bold;\n    font-size: 1.3rem; }\n  .cart .tea-name {\n    padding: 20px 0; }\n  .cart .cart-options {\n    padding: 20px 0; }\n\n.empty-cart {\n  text-align: center;\n  position: relative;\n  padding-top: 80px; }\n  .empty-cart .empty-cart-image {\n    margin: 0 auto; }\n  .empty-cart .empty-cart-text {\n    padding: 20px 0; }\n  .empty-cart .go-shopping-button {\n    padding: 0 15px; }\n", ""]);
 	
 	// exports
 
@@ -429,7 +429,7 @@ webpackJsonp([1],[
 	
 	
 	// module
-	exports.push([module.id, ".checkout {\n  position: relative;\n  padding-top: 80px;\n  margin: 0 50px; }\n", ""]);
+	exports.push([module.id, ".checkout {\n  position: relative;\n  padding-top: 80px;\n  margin: 0 140px; }\n", ""]);
 	
 	// exports
 
@@ -1140,13 +1140,14 @@ webpackJsonp([1],[
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var Checkout = function () {
-	  function Checkout(cartService, $scope) {
+	  function Checkout(cartService, $scope, $window) {
 	    '$inject';
 	
 	    _classCallCheck(this, Checkout);
 	
 	    this.cartService = cartService;
 	    this.$scope = $scope;
+	    this.$window = $window;
 	    this.updateGrandTotal = this.updateGrandTotal.bind(this);
 	    this.$scope.$on('UPDATED_TOTAL', this.updateGrandTotal);
 	    this.$scope.$on('DELETED_ITEM', this.updateGrandTotal);
@@ -1155,8 +1156,24 @@ webpackJsonp([1],[
 	  _createClass(Checkout, [{
 	    key: '$onInit',
 	    value: function $onInit() {
+	      this.$window.scrollTo(0, 0);
 	      this.grandTotal = this.cartService.getGrandTotal();
 	      this.cart = this.cartService.getCart();
+	      // this.cart = [{
+	      //   '_id': '55c8ee82152165d244b98300',
+	      //   'name': 'Bayard stew',
+	      //   'ingredients': 'concentrated gluten, jewelry, dill, beetle nut, toast',
+	      //   'caffeineScale': 244,
+	      //   'price': 1540,
+	      //   'inStock': false,
+	      //   'rating': 1,
+	      //   'total': 32312,
+	      //   'quantity': 4,
+	      //   'grandTotal': 23904,
+	      //   'imageUrl': 'http://s7d5.scene7.com/is/image/Teavana/32664_d?$cimg$',
+	      //   '__v': 0,
+	      //   'categories': ['dark', 'cold']
+	      // }]
 	    }
 	  }, {
 	    key: 'updateGrandTotal',
@@ -1209,13 +1226,30 @@ webpackJsonp([1],[
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	__webpack_require__(138);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var Nav = function Nav() {
-	  _classCallCheck(this, Nav);
-	};
+	var Nav = function () {
+	  function Nav($state) {
+	    'ngInject';
+	
+	    _classCallCheck(this, Nav);
+	
+	    this.$state = $state;
+	  }
+	
+	  _createClass(Nav, [{
+	    key: '$onInit',
+	    value: function $onInit() {
+	      this.currentState = this.$state.$current.name;
+	    }
+	  }]);
+	
+	  return Nav;
+	}();
 	
 	exports.default = Nav;
 
@@ -1459,7 +1493,6 @@ webpackJsonp([1],[
 	    this.cartService = cartService;
 	    this.filterOptions = this.teaService.getFilterOptions();
 	    this.$rootScope = $rootScope;
-	    this.$window = $window;
 	    this.$mdDialog = $mdDialog;
 	  }
 	
@@ -1478,7 +1511,6 @@ webpackJsonp([1],[
 	      this.cartService.setCart(tea);
 	      this.$rootScope.$broadcast('ADD_TO_CART');
 	      this.$mdDialog.show(this.$mdDialog.alert().title('Add to cart').textContent(this.tea.name + ' was added to cart').ok('Ok!')).then(function () {
-	        _this.$window.scrollTo(0, 0);
 	        _this.quantity = 0;
 	      });
 	    }
@@ -2044,19 +2076,19 @@ webpackJsonp([1],[
 /* 127 */
 /***/ (function(module, exports) {
 
-	module.exports = "<md-table-container ng-if=\"$ctrl.cart.length\" class=\"cart\">\n  <table md-table md-row-select multiple>\n    <thead md-head md-order=\"\" md-on-reorder=\"\">\n      <tr md-row>\n        <th md-column>Product</th>\n        <th md-column>Quantity</th>\n        <th md-column>Sub-Total</th>\n      </tr>\n    </thead>\n    <tbody md-body>\n      <tr md-row ng-repeat=\"tea in $ctrl.cart track by $index\">\n        <td md-cell>\n          <p>{{tea.name}}</p>\n          <img ng-src={{tea.imageUrl}} alt=\"\">\n          <p>\n            <md-button class=\"md-raised md-accent\" ng-if=\"!$ctrl.editing\" ng-click=\"$ctrl.triggerEditMode()\">Edit Amount</md-button>\n            <div ng-if=\"$ctrl.editing\">\n              <md-input-container>\n                <label for=\"editTea\">Edit Quantity</label>\n                <md-select ng-model=\"tea.quantity\" ng-change=\"$ctrl.changeAmount(tea, $index)\" id=\"editTea\">\n                  <md-option ng-repeat=\"quantity in $ctrl.quantity\" ng-value=\"quantity\" aria-label=\"quantity\">{{quantity}}</md-option>\n                </md-select>\n                <md-button ng-click=\"$ctrl.changeTotal()\">Submit</md-button>\n              </md-input-container>\n            </div>\n            <md-button class=\"md-raised md-warn\" ng-click=\"$ctrl.deleteItem(tea)\">Delete</md-button>\n          </p>\n        </td>\n        <td md-cell>{{tea.quantity}}</td>\n        <td md-cell>{{tea.total/100 | currency}}</td>\n      </tr>\n    </tbody>\n  </table>\n</md-table-container>\n<section class=\"empty-cart\" ng-if=\"!$ctrl.cart.length\">\n  <h1 class=\"empty-cart-title\">Your cart is empty!</h1>\n  <div class=\"empty-cart-image\">\n    <img src=\"http://icons.veryicon.com/png/Business/Ecommerce/Empty%20shopping%20cart.png\" alt=\"empty cart\">\n  </div>\n  <md-button class=\"md-raised md-primary\" ui-sref=\"home\">Go Shopping!</md-button>\n</section>\n";
+	module.exports = "<md-table-container ng-if=\"$ctrl.cart.length\" class=\"cart\">\n  <table md-table md-row-select multiple>\n    <thead md-head md-order=\"\" md-on-reorder=\"\">\n      <tr md-row>\n        <th md-column>Product</th>\n        <th md-column>Quantity</th>\n        <th md-column>Sub-Total</th>\n      </tr>\n    </thead>\n    <tbody md-body>\n      <tr md-row ng-repeat=\"tea in $ctrl.cart track by $index\">\n        <td md-cell>\n          <p class=\"cart-item tea-name\">{{tea.name}} - Rating: {{::tea.rating}}</p>\n          <img class=\"tea-image\" ng-src={{tea.imageUrl}} alt=\"\">\n          <section layout=\"row\" class=\"cart-options\">\n            <md-button class=\"md-raised md-accent\" ng-if=\"!$ctrl.editing\" ng-click=\"$ctrl.triggerEditMode()\">Edit Amount</md-button>\n            <div ng-if=\"$ctrl.editing\">\n              <md-input-container>\n                <label for=\"editTea\">Edit Quantity</label>\n                <md-select ng-model=\"tea.quantity\" ng-change=\"$ctrl.changeAmount(tea, $index)\" id=\"editTea\">\n                  <md-option ng-repeat=\"quantity in $ctrl.quantity\" ng-value=\"quantity\" aria-label=\"quantity\">{{quantity}}</md-option>\n                </md-select>\n                <md-button ng-click=\"$ctrl.changeTotal()\">Submit</md-button>\n                <md-button ng-click=\"$ctrl.triggerEditMode()\">X</md-button>\n              </md-input-container>\n            </div>\n            <md-button class=\"md-raised md-accent\" ng-click=\"$ctrl.deleteItem(tea)\" ng-if=\"!$ctrl.editing\">Delete</md-button>\n          </section>\n        </td>\n        <td md-cell class=\"cart-item tea-quantity\">{{tea.quantity}}</td>\n        <td md-cell class=\"cart-item tea-total\">{{tea.total/100 | currency}}</td>\n      </tr>\n    </tbody>\n  </table>\n</md-table-container>\n<section class=\"empty-cart\" ng-if=\"!$ctrl.cart.length\">\n  <h1 class=\"empty-cart-title\">Your cart is empty!</h1>\n  <div class=\"empty-cart-image\">\n    <img src=\"http://icons.veryicon.com/png/Business/Ecommerce/Empty%20shopping%20cart.png\" alt=\"empty cart\">\n  </div>\n  <h2 class=\"empty-cart-text\">Take some time to peruse a variety of teas in our shop.</h2>\n  <md-button class=\"md-raised md-primary go-shopping-button\" ui-sref=\"home\">Go Shopping!</md-button>\n</section>\n";
 
 /***/ }),
 /* 128 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"checkout\" ng-if=\"$ctrl.cart.length\">\n  <h1>Your Cart</h1>\n  <h3>Grand Total: {{$ctrl.grandTotal/100 | currency}}</h3>\n</div>\n<cart cart=\"$ctrl.cart\"></cart>\n";
+	module.exports = "<div class=\"checkout\" ng-if=\"$ctrl.cart.length\">\n  <h3>Grand Total: {{$ctrl.grandTotal/100 | currency}}</h3>\n</div>\n<cart cart=\"$ctrl.cart\"></cart>\n";
 
 /***/ }),
 /* 129 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div layout=\"column\" layout-fill>\n    <div class=\"md-toolbar-tools\">\n      <i class=\"fas fa-coffee tea-icon\" md-colors=\"{color: 'accent-100'}\"></i>\n      <h2 md-truncate flex class=\"title\" md-colors=\"{color: 'accent-100'}\">Tea Shopping</h2>\n      <md-button ui-sref=\"home\" class=\"md-accent\">\n        Home\n      </md-button>\n    </div>\n</div>\n";
+	module.exports = "<div layout=\"column\" layout-fill>\n    <div class=\"md-toolbar-tools\">\n      <i class=\"fas fa-coffee tea-icon\" md-colors=\"{color: 'accent-100'}\" ng-if=\"$ctrl.$state.current.name === 'home'\"></i>\n      <i class=\"fas fa-coffee tea-icon\" md-colors=\"{color: 'primary'}\" ng-if=\"$ctrl.$state.current.name !== 'home'\"></i>\n      <h2 md-truncate flex class=\"title\" md-colors=\"{color: 'accent-100'}\" ng-if=\"$ctrl.$state.current.name === 'home'\">Tea Shopping</h2>\n      <h2 md-truncate flex class=\"title\" md-colors=\"{color: 'primary'}\" ng-if=\"$ctrl.$state.current.name !== 'home'\">Tea Shopping</h2>\n      <md-button ui-sref=\"home\" ng-class=\"{'md-accent': $ctrl.$state.current.name === 'home', 'md-primary': $ctrl.$state.current.name !== 'home'}\">\n        Home\n      </md-button>\n    </div>\n</div>\n";
 
 /***/ }),
 /* 130 */

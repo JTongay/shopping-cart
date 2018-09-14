@@ -1,8 +1,10 @@
 <div layout="column" layout-fill>
     <div class="md-toolbar-tools">
-      <i class="fas fa-coffee tea-icon" md-colors="{color: 'accent-100'}"></i>
-      <h2 md-truncate flex class="title" md-colors="{color: 'accent-100'}">Tea Shopping</h2>
-      <md-button ui-sref="home" class="md-accent">
+      <i class="fas fa-coffee tea-icon" md-colors="{color: 'accent-100'}" ng-if="$ctrl.$state.current.name === 'home'"></i>
+      <i class="fas fa-coffee tea-icon" md-colors="{color: 'primary'}" ng-if="$ctrl.$state.current.name !== 'home'"></i>
+      <h2 md-truncate flex class="title" md-colors="{color: 'accent-100'}" ng-if="$ctrl.$state.current.name === 'home'">Tea Shopping</h2>
+      <h2 md-truncate flex class="title" md-colors="{color: 'primary'}" ng-if="$ctrl.$state.current.name !== 'home'">Tea Shopping</h2>
+      <md-button ui-sref="home" ng-class="{'md-accent': $ctrl.$state.current.name === 'home', 'md-primary': $ctrl.$state.current.name !== 'home'}">
         Home
       </md-button>
     </div>

@@ -14,7 +14,6 @@ export default class ShoppingListItem {
     this.cartService = cartService;
     this.filterOptions = this.teaService.getFilterOptions();
     this.$rootScope = $rootScope;
-    this.$window = $window;
     this.$mdDialog = $mdDialog;
   }
 
@@ -33,7 +32,6 @@ export default class ShoppingListItem {
         .textContent(`${this.tea.name} was added to cart`)
         .ok('Ok!')
     ).then(() => {
-      this.$window.scrollTo(0,0);
       this.quantity = 0;
     });
   }

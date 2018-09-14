@@ -1,5 +1,18 @@
 .cart {
-	margin: 0 50px;
+	margin: 0 140px;
+
+	.cart-item {
+		font-weight: bold;
+		font-size: 1.3rem;
+	}
+
+	.tea-name {
+		padding: 20px 0;
+	}
+
+	.cart-options {
+		padding: 20px 0;
+	}
 }
 
 .empty-cart {
@@ -8,5 +21,11 @@
 	padding-top: 80px;
 	.empty-cart-image {
 		margin: 0 auto;
+	}
+	.empty-cart-text {
+		padding: 20px 0;
+	}
+	.go-shopping-button {
+		padding: 0 15px;
 	}
 }

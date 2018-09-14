@@ -10,9 +10,9 @@
     <tbody md-body>
       <tr md-row ng-repeat="tea in $ctrl.cart track by $index">
         <td md-cell>
-          <p>{{tea.name}}</p>
-          <img ng-src={{tea.imageUrl}} alt="">
-          <p>
+          <p class="cart-item tea-name">{{tea.name}} - Rating: {{::tea.rating}}</p>
+          <img class="tea-image" ng-src={{tea.imageUrl}} alt="">
+          <section layout="row" class="cart-options">
             <md-button class="md-raised md-accent" ng-if="!$ctrl.editing" ng-click="$ctrl.triggerEditMode()">Edit Amount</md-button>
             <div ng-if="$ctrl.editing">
               <md-input-container>
@@ -21,13 +21,14 @@
                   <md-option ng-repeat="quantity in $ctrl.quantity" ng-value="quantity" aria-label="quantity">{{quantity}}</md-option>
                 </md-select>
                 <md-button ng-click="$ctrl.changeTotal()">Submit</md-button>
+                <md-button ng-click="$ctrl.triggerEditMode()">X</md-button>
               </md-input-container>
             </div>
-            <md-button class="md-raised md-warn" ng-click="$ctrl.deleteItem(tea)">Delete</md-button>
-          </p>
+            <md-button class="md-raised md-accent" ng-click="$ctrl.deleteItem(tea)" ng-if="!$ctrl.editing">Delete</md-button>
+          </section>
         </td>
-        <td md-cell>{{tea.quantity}}</td>
-        <td md-cell>{{tea.total/100 | currency}}</td>
+        <td md-cell class="cart-item tea-quantity">{{tea.quantity}}</td>
+        <td md-cell class="cart-item tea-total">{{tea.total/100 | currency}}</td>
       </tr>
     </tbody>
   </table>
@@ -37,5 +38,6 @@
   <div class="empty-cart-image">
     <img src="http://icons.veryicon.com/png/Business/Ecommerce/Empty%20shopping%20cart.png" alt="empty cart">
   </div>
-  <md-button class="md-raised md-primary" ui-sref="home">Go Shopping!</md-button>
+  <h2 class="empty-cart-text">Take some time to peruse a variety of teas in our shop.</h2>
+  <md-button class="md-raised md-primary go-shopping-button" ui-sref="home">Go Shopping!</md-button>
 </section>
